@@ -1,0 +1,55 @@
+- editor
+    - stile usato dall'articolo
+    - no schermo intero oppure gestire i vari formati (mobile, tablet, desktop, ...)
+    - body da gestire per l'aggiunta di articles (gallery, ...)
+
+- gestire la ContentArea
+    In ~/tmp/ContentArea c'è qualche info (sniffing, ...) ma sembra un po complicato da capire
+        e sembra manchi anche la documentazione.
+    Meglio utilizzare per la gestione della ContentArea, l'API (Escenic::getAreas) già implementata
+        nella classe rest 'Escenic' in north. Sarebbe da fare il metodo per la scrittura nella content-area.
+
+- tabs nella ricerca
+    - nuovo tab in caso di select da profili
+    - su search, tab di default
+
+- Nella configurazione aggiungere la selezione delle 'relation' da mostrare
+
+- testare il caso in cui un articolo è appena aperto e viene salvato
+    (ho visto che non appare il messaggio che l'articolo non è stato modificato
+       perchè secondo lui una modifica c'è stata)
+- test del formato XML (SAVE) nel caso di ComplexValue
+
+- implementare 'release lock' (il tuo lock, quello dell'icona 'pencil')
+
+I seguenti tipi sono "predefiniti", ci sono due opzioni:
+    1. far comparire 'internal'
+    2. avere il tipo predefinito nel codice. Questo penso sia il modo corretto di operare altrimenti non si
+        potrebbe neanche salvere questo campo nel caso in cui abbia avuto modifiche in quanto non si potrebbe
+        scrivere il contenuto di quei campi "interni" non gestiti. Esempio, il campo 'Schedule Information'
+        (i.e. id: 5965801 in prod) e' un complex, composto da una stringa 'channel' e dal campo 'interno' seriesSchedule.
+        Se la stringa 'channel' viene modificata, non si potrebbe salvare perchè non sapremmo gestire
+        il campo 'interno' seriesSchedule.
+I tipi sono: shopLink, datasource, binary, serverURL, alternates, video, audio, facebookLink, twitterLink, seriesSchedule (id: 5965801 in prod.)
+
+Ancora da fare:
+    - quando trascino una foto nella galleria, nella foto aggiungere la sezione della galleria
+
+lock da completare:
+    - verificare edit-lock-save per ogni campo
+    - save of a complex field
+    - trovare due diverse icone, una per 'sola modifica' e una per 'mio lock'
+
+Da controllare:
+    - history log not updated (sniffing on maams?)
+    - Errore su: getArticleContentDetails. id: 5987041
+    - non viene fornito alcun messaggio di errore quando la query (solr) fallisce
+    - su Explorer non va
+
+- polling con update mantiene i dati solo su firefox?
+
+- il menu di contesto 'close all tabs' ... appare anche all'interno del tab
+- riabilitare Close All, ...
+
+User escenic: testuser/testuser
+

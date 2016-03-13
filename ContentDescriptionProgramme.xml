@@ -1,0 +1,2841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.escenic.domain.ContentDescriptor>
+<mVersion>1415708266</mVersion>
+<mPropertyDescriptors>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>disableAutomaticFieldsEdit</mName>
+        <mLabel>Disabilita aggiornamenti di title, subhead, leadtext e body</mLabel>
+        <mDescription>The title of the video</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mDefaultValue class="boolean">false</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Disabilita aggiornamenti di title, subhead, leadtext e body</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The title of the video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>false</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>title</mName>
+        <mLabel>Title</mLabel>
+        <mDescription>The title of the video</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints>
+            <com.escenic.domain.constraint.CompositeConstraint>
+                <mErrorMessage>Title may not be blank</mErrorMessage>
+                <mChildConstraints class="java.util.Arrays$ArrayList">
+                    <a class="com.escenic.domain.Constraint-array">
+                        <com.escenic.domain.constraint.NotNullConstraint>
+                            <mErrorMessage>Title may not be blank</mErrorMessage>
+                        </com.escenic.domain.constraint.NotNullConstraint>
+                        <com.escenic.domain.constraint.RegexConstraint serialization="custom">
+                            <com.escenic.domain.Constraint>
+                                <default>
+                                    <mErrorMessage>Title may not be blank</mErrorMessage>
+                                </default>
+                            </com.escenic.domain.Constraint>
+                            <com.escenic.domain.constraint.RegexConstraint>
+                                <default>
+                                    <mRegex>(?s).*[\S]+.*</mRegex>
+                                </default>
+                            </com.escenic.domain.constraint.RegexConstraint>
+                        </com.escenic.domain.constraint.RegexConstraint>
+                    </a>
+                </mChildConstraints>
+            </com.escenic.domain.constraint.CompositeConstraint>
+        </mConstraints>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Title</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The title of the video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>subtitle</mName>
+        <mLabel>Subhead</mLabel>
+        <mDescription>The subhead of the article</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Subhead</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The subhead of the article</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>leadtext</mName>
+        <mLabel>Lead text</mLabel>
+        <mDescription>The leadtext of the video</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Lead text</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>style</mElementName>
+                    <mContent>body { font-size: 160%; }</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The leadtext of the video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>body</mName>
+        <mLabel>Body</mLabel>
+        <mDescription>The body text of the article.</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Body</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The body text of the article.</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes>
+                        <entry>
+                            <string>rows</string>
+                            <string>10</string>
+                        </entry>
+                        <entry>
+                            <string>cols</string>
+                            <string>40</string>
+                        </entry>
+                    </mAttributes>
+                    <mElementName>layout</mElementName>
+                    <mContent></mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>application/xhtml+xml</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>caption</mName>
+        <mLabel>Caption</mLabel>
+        <mDescription>The caption of the audio</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Caption</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>style</mElementName>
+                    <mContent>body { font-size: 140%; }</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The caption of the audio</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>credits</mName>
+        <mLabel>Credits</mLabel>
+        <mDescription>The credits of the asset</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Credits</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The credits of the asset</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>parentSeries</mName>
+        <mLabel>Parent Series</mLabel>
+        <mDescription>The parent series of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Parent Series</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The parent series of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>shopLink</mName>
+        <mLabel>Shop Link</mLabel>
+        <mDescription>The link to the programme in the shop</mDescription>
+        <mType>java.net.URI</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Shop Link</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The link to the programme in the shop</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>TXTPageNumber</mName>
+        <mLabel>TXT Page Number</mLabel>
+        <mDescription>Teletext Page Number</mDescription>
+        <mType>java.math.BigDecimal</mType>
+        <mDefaultValue class="big-decimal">0</mDefaultValue>
+        <mConstraints>
+            <com.escenic.domain.constraint.RangeConstraint>
+                <mErrorMessage>%s was not between %s and %s</mErrorMessage>
+                <mMin class="big-decimal">-9223372036854775808</mMin>
+                <mMax class="big-decimal">9223372036854775807</mMax>
+            </com.escenic.domain.constraint.RangeConstraint>
+        </mConstraints>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>TXT Page Number</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Teletext Page Number</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>0</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>TXTText</mName>
+        <mLabel>TXT Text</mLabel>
+        <mDescription>Teletext Text</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>TXT Text</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Teletext Text</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>startTime</mName>
+        <mLabel>Start Time</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints>
+            <com.escenic.domain.constraint.NotNullConstraint>
+                <mErrorMessage>Start Time can not be empty</mErrorMessage>
+            </com.escenic.domain.constraint.NotNullConstraint>
+        </mConstraints>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Start Time</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>channel</mName>
+        <mLabel>Channel</mLabel>
+        <mDescription>The channel of the programme/asset</mDescription>
+        <mType>java.lang.String</mType>
+        <mDefaultValue class="string">la1</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Channel</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The channel of the programme/asset</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>la1</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>La 1</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">la1</mValue>
+                <mLabel>La 1</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>La 2</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">la2</mValue>
+                <mLabel>La 2</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Rete Uno</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">rete-uno</mValue>
+                <mLabel>Rete Uno</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Rete Due</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">rete-due</mValue>
+                <mLabel>Rete Due</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Rete Tre</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">rete-tre</mValue>
+                <mLabel>Rete Tre</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Web</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+                <mValue class="string">web</mValue>
+                <mLabel>Web</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_legacyid</mName>
+        <mLabel>Legacy Id</mLabel>
+        <mDescription>The legacy id of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Legacy Id</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The legacy id of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_episodenr</mName>
+        <mLabel>Episode Number</mLabel>
+        <mDescription>The episode number of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Episode Number</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode number of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>series_title</mName>
+        <mLabel>Series Title</mLabel>
+        <mDescription>The parent series title of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Series Title</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The parent series title of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_title</mName>
+        <mLabel>Episode Title</mLabel>
+        <mDescription>The episode title of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Episode Title</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode title of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_originaltitle</mName>
+        <mLabel>Episode Original Title</mLabel>
+        <mDescription>The original episode title of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Episode Original Title</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The original episode title of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_producttypedesc</mName>
+        <mLabel>Product Type description</mLabel>
+        <mDescription>The episode product type description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Product Type description</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode product type description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_targetdesc</mName>
+        <mLabel>Target description</mLabel>
+        <mDescription>The episode target description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Target description</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode target description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_categorydesc</mName>
+        <mLabel>Category Description</mLabel>
+        <mDescription>The episode category description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Category Description</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode category description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_genredesc</mName>
+        <mLabel>Genre Description</mLabel>
+        <mDescription>The episode genre description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Genre Description</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode genre description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_subgenredesc</mName>
+        <mLabel>SubGenre Description</mLabel>
+        <mDescription>The episode subgenre description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>SubGenre Description</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode subgenre description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_genretype</mName>
+        <mLabel>Genre Type</mLabel>
+        <mDescription>The episode genre type of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Genre Type</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode genre type of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_durationexpected</mName>
+        <mLabel>Duration expected</mLabel>
+        <mDescription>The episode duration expected of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Duration expected</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode duration expected of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_productionyear</mName>
+        <mLabel>Production Year</mLabel>
+        <mDescription>The episode production year of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Production Year</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode production year of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_warningdesc</mName>
+        <mLabel>Warning Descriptionr</mLabel>
+        <mDescription>The episode warning description of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Warning Descriptionr</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The episode warning description of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>episode_lastupdate</mName>
+        <mLabel>Episode Last Update</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Episode Last Update</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>vps</mName>
+        <mLabel>vps</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>vps</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>primeur</mName>
+        <mLabel>Primeur</mLabel>
+        <mDescription>First playing</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Primeur</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>First playing</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>flagbicanale</mName>
+        <mLabel>Original Language</mLabel>
+        <mDescription>In Original Language</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Original Language</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>In Original Language</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>flagsignlanguage</mName>
+        <mLabel>Sign Language</mLabel>
+        <mDescription>Has Sign Language</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Sign Language</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Has Sign Language</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>flagteletext</mName>
+        <mLabel>TXT subtitles</mLabel>
+        <mDescription>Contain TXT subtitles</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mDefaultValue class="boolean">true</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>TXT subtitles</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Contain TXT subtitles</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>true</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>flagadultwarning</mName>
+        <mLabel>Adult warning</mLabel>
+        <mDescription>Contain TXT subtitles</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Adult warning</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Contain TXT subtitles</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>mesoTags</mName>
+        <mLabel>MESO Tags</mLabel>
+        <mDescription>The tags used by the Social Media filter</mDescription>
+        <mType>java.util.List</mType>
+        <mDefaultValue class="empty-list"/>
+        <mConstraints>
+            <com.escenic.domain.constraint.ElementCountConstraint>
+                <mErrorMessage>Wrong number of elements</mErrorMessage>
+                <mMinCount>0</mMinCount>
+                <mMaxCount>2147483647</mMaxCount>
+            </com.escenic.domain.constraint.ElementCountConstraint>
+        </mConstraints>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>MESO Tags</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The tags used by the Social Media filter</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor>
+            <mName>mesoTags</mName>
+            <mLabel>MESO Tags</mLabel>
+            <mDescription>The tags used by the Social Media filter</mDescription>
+            <mType>java.lang.String</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>MESO Tags</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>description</mElementName>
+                        <mContent>The tags used by the Social Media filter</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+            </mModuleSupport>
+            <mMimetype>text/plain</mMimetype>
+            <mReadOnly>false</mReadOnly>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>lead</mName>
+        <mLabel>Lead</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Lead</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor>
+            <mName>relation</mName>
+            <mLabel>Relation</mLabel>
+            <mType>com.escenic.domain.ContentSummary</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>related</mName>
+        <mLabel>Related</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Related</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor reference="../../com.escenic.domain.ListPropertyDescriptor[2]/mElementDescriptor"/>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>teaserRel</mName>
+        <mLabel>Teaser Relations</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Teaser Relations</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor reference="../../com.escenic.domain.ListPropertyDescriptor[2]/mElementDescriptor"/>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>forum</mName>
+        <mLabel>Forum Relations</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Forum Relations</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor reference="../../com.escenic.domain.ListPropertyDescriptor[2]/mElementDescriptor"/>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.SpecializedMapPropertyDescriptor>
+        <mName>com.escenic.sections</mName>
+        <mLabel>Sections</mLabel>
+        <mType>java.util.Map</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mKeyDescriptor>
+            <mName>publication.uri</mName>
+            <mLabel>Publication.uri</mLabel>
+            <mType>java.net.URI</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mKeyDescriptor>
+        <mValueDescriptor class="com.escenic.domain.ListPropertyDescriptor">
+            <mName>section.elements</mName>
+            <mLabel>section.elements</mLabel>
+            <mType>java.util.List</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+            <mElementDescriptor>
+                <mName>relation</mName>
+                <mLabel>Relation</mLabel>
+                <mType>com.escenic.domain.Link</mType>
+                <mConstraints/>
+                <mModuleSupport>
+                    <mModules/>
+                </mModuleSupport>
+                <mReadOnly>false</mReadOnly>
+            </mElementDescriptor>
+        </mValueDescriptor>
+    </com.escenic.domain.SpecializedMapPropertyDescriptor>
+    <com.escenic.domain.StatePropertyDescriptor>
+        <mName>com.escenic.state</mName>
+        <mLabel>State</mLabel>
+        <mType>com.escenic.abdera.vaext.State</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mStateURIs>
+            <uri>escenic/content/state/legacy/draft</uri>
+            <uri>escenic/content/state/legacy/submitted</uri>
+            <uri>escenic/content/state/legacy/approved</uri>
+            <uri>escenic/content/state/legacy/published</uri>
+            <uri>escenic/content/state/legacy/deleted</uri>
+        </mStateURIs>
+    </com.escenic.domain.StatePropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>endTime</mName>
+        <mLabel>End Time</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>End Time</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>time</mName>
+        <mLabel>Time</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Time</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>duration</mName>
+        <mLabel>Duration</mLabel>
+        <mDescription>The duration of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Duration</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The duration of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>serviceId</mName>
+        <mLabel>Service Id</mLabel>
+        <mDescription>The service id of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Service Id</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The service id of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>pdcpil</mName>
+        <mLabel>Pdc Pil</mLabel>
+        <mDescription>The Pdc Pil of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Pdc Pil</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The Pdc Pil of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>parentEpisode</mName>
+        <mLabel>Parent episode</mLabel>
+        <mDescription>The parent episode of the programme</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Parent episode</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The parent episode of the programme</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>kind</mName>
+        <mLabel>Kind</mLabel>
+        <mDescription>The programme&apos;s kind</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Kind</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The programme&apos;s kind</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>audioFormat</mName>
+        <mLabel>Audio format</mLabel>
+        <mDescription>The audio format of the video</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Audio format</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The audio format of the video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>geoBlocked</mName>
+        <mLabel>Geo Blocked</mLabel>
+        <mDescription>This field determines if the content is geo blocked</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mDefaultValue class="boolean">false</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Geo Blocked</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>This field determines if the content is geo blocked</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>false</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>generateShortURL</mName>
+        <mLabel>Generate Short Url</mLabel>
+        <mDescription>This field determines if the content will create a short URL</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mDefaultValue class="boolean">false</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Generate Short Url</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>This field determines if the content will create a short URL</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>false</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>rightsManaged</mName>
+        <mLabel>Rights on asset</mLabel>
+        <mDescription>Rights on asset</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mDefaultValue class="boolean">false</mDefaultValue>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Rights on asset</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Rights on asset</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>value-if-unset</mElementName>
+                    <mContent>false</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>vmeId</mName>
+        <mLabel>VME Id</mLabel>
+        <mDescription>The id of the asset in VME</mDescription>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>VME Id</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>The id of the asset in VME</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>image_icon</mName>
+        <mLabel>Image</mLabel>
+        <mDescription>Is the article contains image</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Image</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Is the article contains image</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>hidden</mElementName>
+                    <mContent></mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>gallery_icon</mName>
+        <mLabel>Gallery</mLabel>
+        <mDescription>Is the article contains gallery</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Gallery</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Is the article contains gallery</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>hidden</mElementName>
+                    <mContent></mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>video_icon</mName>
+        <mLabel>Video</mLabel>
+        <mDescription>Is the article contains video</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Is the article contains video</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>hidden</mElementName>
+                    <mContent></mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.SingleSelectionPropertyDescriptor>
+        <mName>audio_icon</mName>
+        <mLabel>Audio</mLabel>
+        <mDescription>Is the article contains audio</mDescription>
+        <mType>java.lang.Boolean</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>label</mElementName>
+                    <mContent>Audio</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>description</mElementName>
+                    <mContent>Is the article contains audio</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>hidden</mElementName>
+                    <mContent></mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mOptions>
+            <null/>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">true</mValue>
+                <mLabel>True</mLabel>
+            </com.escenic.domain.EnumerationOption>
+            <com.escenic.domain.EnumerationOption>
+                <mModules/>
+                <mValue class="boolean">false</mValue>
+                <mLabel>False</mLabel>
+            </com.escenic.domain.EnumerationOption>
+        </mOptions>
+    </com.escenic.domain.SingleSelectionPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>tags</mName>
+        <mLabel>Tag</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mMimetype>text/plain</mMimetype>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor class="com.escenic.domain.MapPropertyDescriptor">
+            <mName>Payload</mName>
+            <mLabel>Payload</mLabel>
+            <mType>java.util.Map</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+            <mProperties>
+                <entry>
+                    <string>tag</string>
+                    <com.escenic.domain.collection.CollectionPropertyDescriptor>
+                        <mName>tag</mName>
+                        <mLabel>Tag</mLabel>
+                        <mType>com.escenic.domain.collection.CollectionValue</mType>
+                        <mConstraints/>
+                        <mModuleSupport>
+                            <mModules/>
+                        </mModuleSupport>
+                        <mMimetype>text/plain</mMimetype>
+                        <mReadOnly>false</mReadOnly>
+                        <mSource>
+                            http://internal.publishing.production.rsi.ch:8080/webservice/publication/rsi/escenic/classification
+                        </mSource>
+                        <mSelect>TITLE</mSelect>
+                    </com.escenic.domain.collection.CollectionPropertyDescriptor>
+                </entry>
+                <entry>
+                    <string>relevance</string>
+                    <com.escenic.domain.PropertyDescriptor>
+                        <mName>relevance</mName>
+                        <mLabel>Tag relevance</mLabel>
+                        <mType>java.lang.Double</mType>
+                        <mDefaultValue class="double">1.0</mDefaultValue>
+                        <mConstraints/>
+                        <mModuleSupport>
+                            <mModules/>
+                        </mModuleSupport>
+                        <mMimetype>text/plain</mMimetype>
+                        <mReadOnly>false</mReadOnly>
+                    </com.escenic.domain.PropertyDescriptor>
+                </entry>
+            </mProperties>
+            <mOrderedProperties>
+                <com.escenic.domain.collection.CollectionPropertyDescriptor
+                        reference="../../mProperties/entry/com.escenic.domain.collection.CollectionPropertyDescriptor"/>
+                <com.escenic.domain.PropertyDescriptor
+                        reference="../../mProperties/entry[2]/com.escenic.domain.PropertyDescriptor"/>
+            </mOrderedProperties>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.displayName</mName>
+        <mLabel>Name</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.displayId</mName>
+        <mLabel>Id</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.displayUri</mName>
+        <mLabel>URL</mLabel>
+        <mType>java.net.URI</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.previewUri</mName>
+        <mLabel>com.escenic.previewUri</mLabel>
+        <mType>java.net.URI</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.createdBy</mName>
+        <mLabel>Created by</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>com.escenic.authors</mName>
+        <mLabel>Authors</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+        <mElementDescriptor>
+            <mName>relation</mName>
+            <mLabel>Relation</mLabel>
+            <mType>com.escenic.domain.Link</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>com.escenic.tags</mName>
+        <mLabel>com.escenic.tags</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor>
+            <mName>tag</mName>
+            <mLabel>Tag</mLabel>
+            <mType>com.escenic.domain.TagRelation</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.createDate</mName>
+        <mLabel>Created</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.expireDate</mName>
+        <mLabel>Expires</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.firstPublishDate</mName>
+        <mLabel>First published</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.activateDate</mName>
+        <mLabel>Activate date</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.publishedDate</mName>
+        <mLabel>Published</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.lastModifiedDate</mName>
+        <mLabel>Last modified</mLabel>
+        <mType>java.util.Date</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.homeSection</mName>
+        <mLabel>Home section</mLabel>
+        <mType>com.escenic.domain.Link</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.SpecializedMapPropertyDescriptor>
+        <mName>com.escenic.localHomeSections</mName>
+        <mLabel>Local home sections</mLabel>
+        <mType>java.util.Map</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mKeyDescriptor>
+            <mName>publication</mName>
+            <mLabel>Publication</mLabel>
+            <mType>java.net.URI</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mKeyDescriptor>
+        <mValueDescriptor>
+            <mName>section</mName>
+            <mLabel>Section</mLabel>
+            <mType>com.escenic.domain.Link</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mValueDescriptor>
+    </com.escenic.domain.SpecializedMapPropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.priority</mName>
+        <mLabel>Priority</mLabel>
+        <mType>java.lang.Integer</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.sourceid</mName>
+        <mLabel>Source id</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.source</mName>
+        <mLabel>Source</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.lockURI</mName>
+        <mLabel>Lock URL</mLabel>
+        <mType>java.lang.String</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.PropertyDescriptor>
+        <mName>com.escenic.publication</mName>
+        <mLabel>Publication</mLabel>
+        <mType>com.escenic.domain.Link</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules/>
+        </mModuleSupport>
+        <mReadOnly>true</mReadOnly>
+    </com.escenic.domain.PropertyDescriptor>
+    <com.escenic.domain.ListPropertyDescriptor>
+        <mName>com.escenic.inlineRelations</mName>
+        <mLabel>Relations to inlined objects</mLabel>
+        <mType>java.util.List</mType>
+        <mConstraints/>
+        <mModuleSupport>
+            <mModules>
+                <com.escenic.module.ModuleImpl>
+                    <mCanContainModulesSupport>
+                        <mModules/>
+                    </mCanContainModulesSupport>
+                    <mAttributes/>
+                    <mElementName>hidden</mElementName>
+                    <mContent>true</mContent>
+                    <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                </com.escenic.module.ModuleImpl>
+            </mModules>
+        </mModuleSupport>
+        <mReadOnly>false</mReadOnly>
+        <mElementDescriptor>
+            <mName>inlineRelation</mName>
+            <mLabel>Inlinerelation</mLabel>
+            <mType>com.escenic.domain.ContentSummary</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules/>
+            </mModuleSupport>
+            <mReadOnly>false</mReadOnly>
+        </mElementDescriptor>
+    </com.escenic.domain.ListPropertyDescriptor>
+</mPropertyDescriptors>
+<mPropertyGroups>
+    <com.escenic.domain.PropertyGroup>
+        <mName>default</mName>
+        <mLabel>Default</mLabel>
+        <mDescription>Programme Content</mDescription>
+        <mPropertyDescriptors>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[2]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[3]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[4]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[5]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[6]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[7]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[8]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[9]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[10]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[11]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[2]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[12]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[13]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[14]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[15]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[16]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[17]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[18]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[19]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[20]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[21]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[22]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[23]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[24]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[25]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[26]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[27]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[3]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[4]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[5]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[6]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[7]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[2]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[3]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[4]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[5]"/>
+            <com.escenic.domain.SpecializedMapPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SpecializedMapPropertyDescriptor"/>
+            <com.escenic.domain.StatePropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.StatePropertyDescriptor"/>
+        </mPropertyDescriptors>
+        <mPropertySets class="empty-list"/>
+    </com.escenic.domain.PropertyGroup>
+    <com.escenic.domain.PropertyGroup>
+        <mName>metadata</mName>
+        <mLabel>Metadata</mLabel>
+        <mPropertyDescriptors>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[28]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[29]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[30]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[31]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[32]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[33]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[34]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[35]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[8]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[9]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[10]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[36]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[11]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[12]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[13]"/>
+            <com.escenic.domain.SingleSelectionPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SingleSelectionPropertyDescriptor[14]"/>
+        </mPropertyDescriptors>
+        <mPropertySets class="empty-list"/>
+    </com.escenic.domain.PropertyGroup>
+    <com.escenic.domain.PropertyGroup>
+        <mName>COM.ESCENIC.TAGSCHEME</mName>
+        <mLabel>COM.ESCENIC.TAGSCHEME</mLabel>
+        <mPropertyDescriptors>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[6]"/>
+        </mPropertyDescriptors>
+        <mPropertySets class="empty-list"/>
+    </com.escenic.domain.PropertyGroup>
+    <com.escenic.domain.PropertyGroup>
+        <mName>COM.ESCENIC.METADATA</mName>
+        <mLabel>COM.ESCENIC.METADATA</mLabel>
+        <mPropertyDescriptors>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[37]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[38]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[39]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[40]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[41]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[7]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[8]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[42]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[43]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[44]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[45]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[46]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[47]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[48]"/>
+            <com.escenic.domain.SpecializedMapPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.SpecializedMapPropertyDescriptor[2]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[49]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[50]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[51]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[52]"/>
+            <com.escenic.domain.PropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[53]"/>
+            <com.escenic.domain.ListPropertyDescriptor
+                    reference="../../../../mPropertyDescriptors/com.escenic.domain.ListPropertyDescriptor[9]"/>
+        </mPropertyDescriptors>
+        <mPropertySets class="empty-list"/>
+    </com.escenic.domain.PropertyGroup>
+</mPropertyGroups>
+<mContentType>programme</mContentType>
+<mLabel>Programme</mLabel>
+<mDescription>Content type for a Programme</mDescription>
+<mId>http://internal.publishing.production.rsi.ch:8080/webservice/publication/rsi/escenic/model/programme</mId>
+<mSummaryDescriptor>
+    <mVersion>1415708266</mVersion>
+    <mPropertyDescriptors>
+        <com.escenic.domain.PropertyDescriptor>
+            <mName>title</mName>
+            <mLabel>Title</mLabel>
+            <mType>java.lang.String</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Title</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>editor-style</mElementName>
+                        <mContent>summary</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+            </mModuleSupport>
+            <mMimetype>text/plain</mMimetype>
+            <mReadOnly>false</mReadOnly>
+        </com.escenic.domain.PropertyDescriptor>
+        <com.escenic.domain.PropertyDescriptor>
+            <mName>leadtext</mName>
+            <mLabel>Lead text</mLabel>
+            <mType>java.lang.String</mType>
+            <mConstraints/>
+            <mModuleSupport>
+                <mModules>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>label</mElementName>
+                        <mContent>Lead text</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                    <com.escenic.module.ModuleImpl>
+                        <mCanContainModulesSupport>
+                            <mModules/>
+                        </mCanContainModulesSupport>
+                        <mAttributes/>
+                        <mElementName>editor-style</mElementName>
+                        <mContent>summary</mContent>
+                        <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+                    </com.escenic.module.ModuleImpl>
+                </mModules>
+            </mModuleSupport>
+            <mMimetype>text/plain</mMimetype>
+            <mReadOnly>false</mReadOnly>
+        </com.escenic.domain.PropertyDescriptor>
+    </mPropertyDescriptors>
+    <mPropertyGroups class="java.util.Arrays$ArrayList">
+        <a class="com.escenic.domain.PropertyGroup-array">
+            <com.escenic.domain.PropertyGroup>
+                <mName>COM.ESCENIC.DEFAULT</mName>
+                <mLabel>COM.ESCENIC.DEFAULT</mLabel>
+                <mPropertyDescriptors>
+                    <com.escenic.domain.PropertyDescriptor
+                            reference="../../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor"/>
+                    <com.escenic.domain.PropertyDescriptor
+                            reference="../../../../../mPropertyDescriptors/com.escenic.domain.PropertyDescriptor[2]"/>
+                </mPropertyDescriptors>
+                <mPropertySets class="empty-list"/>
+            </com.escenic.domain.PropertyGroup>
+        </a>
+    </mPropertyGroups>
+    <mContentType>programme</mContentType>
+    <mLabel>Content Summary</mLabel>
+    <mId>http://internal.publishing.production.rsi.ch:8080/webservice/publication/rsi/escenic/model/programme</mId>
+    <mTitleDescriptor>title</mTitleDescriptor>
+    <mModuleSupport class="com.escenic.module.CanContainModulesSupport">
+        <mModules>
+            <com.escenic.module.ModuleImpl>
+                <mCanContainModulesSupport>
+                    <mModules/>
+                </mCanContainModulesSupport>
+                <mAttributes/>
+                <mElementName>label</mElementName>
+                <mContent>Content Summary</mContent>
+                <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+            </com.escenic.module.ModuleImpl>
+        </mModules>
+    </mModuleSupport>
+    <mAllowInvalidProperties>false</mAllowInvalidProperties>
+</mSummaryDescriptor>
+<mTitleDescriptor>title</mTitleDescriptor>
+<mModuleSupport class="com.escenic.module.CanContainModulesSupport">
+    <mModules>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>icon</mElementName>
+            <mContent>generic</mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>label</mElementName>
+            <mContent>Programme</mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>description</mElementName>
+            <mContent>Content type for a Programme</mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>title-field</mElementName>
+            <mContent>title</mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes>
+                <entry>
+                    <string>class</string>
+                    <string>com.escenic.forum.presentation.ForumPresentationArticleDecorator</string>
+                </entry>
+            </mAttributes>
+            <mElementName>decorator</mElementName>
+            <mContent></mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>tag-scheme</mElementName>
+            <mContent>tag:rsi.ch,2013</mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+        <com.escenic.module.ModuleImpl>
+            <mCanContainModulesSupport>
+                <mModules/>
+            </mCanContainModulesSupport>
+            <mAttributes/>
+            <mElementName>duplicateAsTargets</mElementName>
+            <mContent>
+                product,widget_container,widget_forum,widget_radioOnAir,widget_scheduleBoard,widget_list,widget_meteo,widget_storiesViewHeadline,widget_profileMenu,widget_RTSPlayer,faq,application,htmlContent,widget_rsiUserMessage,widget_liveRadio,widget_advancedSearch,widget_directCommunication,widget_gallery,widget_contentField,banner,programme,widget_series,widget_rsiCarousel,widget_redazione,widget_userContentManager,widget_applications,widget_rssfeed,widget_audioPlayer,widget_master,widget_search,widget_tvsPlayer,widget_arthur,widget_liveStreaming,widget_rating,,gallery,widget_profileActions,youtubeVideo,widget_TVSVIZPlayer,widget_tableResult,recipe,widget_liveAccordion,widget_blogNavigation,scenario,widget_tableSchedule,vmeVideo,,,widget_rsiFaq,link,widget_iframe,widget_calendarSearch,information,widget_topStory,widget_code,dossier,widget_archive,widget_trailers,widget_blogUserList,widget_agenda,,widget_tabsSearch,programmeAudio,widget_epg,srgEvent,widget_authentication,widget_userActivity,story,forum,widget_socialMedia,profile,widget_election,widget_radioOnAirMessage,,widget_menu,widget_contentInfo,widget_rsiTuttiProgrammi,tvsvizPlayerFilter,migrationAudio,widget_resultCenter,widget_crossPublication,factbox,widget_rsiCalendarCarousel,livestreaming,widget_webSeries,widget_headline,widget_relatedContents,widget_mostPopular,migrationVideo,vizReporterAudio,promo,vizReporterVideo,,widget_zabbixTest,appAPIConfiguration,userProfile,shortStory,event,widget_metaDataLoader,widget_actionLinks,articleCollection,widget_contentActions,programmeVideo,widget_dateline,widget_scenario,widget_video,widget_promoBanner,widget_rsiThemes,webcam,widget_logo,widget_rsiForum,vmeAudio,widget_teaser,widget_newsletter,widget_profile,srgEditorialPick,widget_rsiParliamoDi,communication,series,segmentedProgrammeVideo,liveAccordionPanel,widget_pageTools,wf_datasource_stories,widget_navigation,widget_programFeedback,programGroup,widget_podcast,widget_drawingBoard,widget_favoritesList,widget_comments,widget_liveSport,widget_json,hbbtvConfiguration,arthur,widget_tvsNavigation,widget_emailForm,
+            </mContent>
+            <mURI>http://xmlns.escenic.com/2008/interface-hints</mURI>
+        </com.escenic.module.ModuleImpl>
+    </mModules>
+</mModuleSupport>
+<mAllowInvalidProperties>false</mAllowInvalidProperties>
+</com.escenic.domain.ContentDescriptor>
+

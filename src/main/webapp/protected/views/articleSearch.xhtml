@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <p:dialog header="Save Search Profile" appendTo="@(body)" widgetVar="saveProfileNameDialog" modal="true"
+              showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+        <h:form id="saveProfileNameDialogForm">
+            <p:outputLabel value="Profile name: " />
+            <p:inputText value="#{articleSearchBacking.dialogProfileName}" required="true"/>
+
+            <br />
+            <br />
+
+            <p:commandButton value="Save" action="#{articleSearchBacking.saveProfile}"
+                onclick="PF('saveProfileNameDialog').hide()"
+                update=":searchForm:searchFormToolbar deleteProfileNameDialog"/>
+        </h:form>
+
+    </p:dialog>
+
+    <p:dialog id="deleteProfileNameDialog" header="Delete Search Profile" appendTo="@(body)" widgetVar="deleteProfileNameDialog" modal="true"
+              showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+        <h:form id="deleteProfileNameDialogForm">
+            <p:outputLabel value="Profile name: " />
+            <p:selectOneMenu value="#{articleSearchBacking.selectedProfile}" >
+                <f:selectItem itemLabel="Select Profile" itemValue="" noSelectionOption="true" />
+                <f:selectItems value="#{articleSearchBacking.profiles}" />
+            </p:selectOneMenu>
+
+            <br />
+            <br />
+
+            <p:commandButton value="Delete" action="#{articleSearchBacking.deleteProfile}"
+                onclick="PF('deleteProfileNameDialog').hide()"
+                update=":searchForm:searchFormToolbar deleteProfileNameDialog"/>
+        </h:form>
+
+    </p:dialog>
+
+    <h:form id="searchForm">
+
+        <!-- <p:growl id="searchGrowl" showDetail="true" life="2000" /> Delete, Select Profile, Save -->
+
+        <p:toolbar id="searchFormToolbar" styleClass="escenicBrowserToolbar">
+            <p:toolbarGroup align="left">
+                <p:commandButton icon="ui-icon ui-icon-search" update=":resultsForm:results" />
+                <p:commandButton icon="ui-icon ui-icon-document" action="#{articleSearchBacking.reset}" update="searchPanel"/>
+            </p:toolbarGroup>
+
+            <p:toolbarGroup align="right">
+                <p:selectOneMenu value="#{articleSearchBacking.selectedProfile}" >
+                    <p:ajax listener="#{articleSearchBacking.loadProfile}"
+                        update="searchFormToolbar searchPanel :resultsForm:results" />
+                    <f:selectItem itemLabel="Select Profile" itemValue="" noSelectionOption="true" />
+                    <f:selectItems value="#{articleSearchBacking.profiles}" />
+                </p:selectOneMenu>
+
+                <p:commandButton icon="ui-icon ui-icon-disk" onclick="PF('saveProfileNameDialog').show()"/>
+
+                <p:commandButton icon="ui-icon ui-icon-trash" onclick="PF('deleteProfileNameDialog').show()"/>
+
+            </p:toolbarGroup>
+
+        </p:toolbar>
+
+        <p:panelGrid id="searchPanel" columns="2" >
+
+            <p:outputLabel value="Text to search: "/>
+            <p:inputText id="textToSearch" value="#{articleSearchBacking.textToSearch}" />
+
+            <p:outputLabel for="textToSearchType" value="Text search type:" />
+            <p:selectOneMenu id="textToSearchType" value="#{articleSearchBacking.selectedTextToSearchType}">
+                <f:selectItems value="#{articleSearchBacking.textToSearchTypeList}" />
+            </p:selectOneMenu>
+
+
+            <!-- <p:outputLabel for="states" value="States:" /> -->
+            <!-- label="#{articleSearchBacking.stateLabel}" -->
+            <p:selectCheckboxMenu id="states" value="#{articleSearchBacking.selectedState}"
+                                  label="States"
+                                  panelStyle="width:250px">
+                <f:selectItems value="#{articleSearchBacking.statesLabels}" />
+                <!-- <p:ajax event="change" update="states" /> -->
+            </p:selectCheckboxMenu>
+
+            <!-- <p:outputLabel for="contentTypes" value="Content types:" /> -->
+            <!-- label="#{articleSearchBacking.contentTypeLabel}" -->
+            <p:selectCheckboxMenu id="contentTypes" value="#{articleSearchBacking.selectedContentTypes}"
+                label="Content types"
+                filter="true" filterMatchMode="contains" panelStyle="width:250px">
+                <f:selectItems value="#{articleSearchBacking.contentTypesLabels}" />
+                <!-- <p:ajax event="change" update="contentTypes" /> -->
+            </p:selectCheckboxMenu>
+
+
+            <p:outputLabel for="publication" value="Publications: "/>
+            <p:inputText id="publication" value="#{articleSearchBacking.selectedPublications}" disabled="true"/>
+
+            <p:outputLabel for="sections" value="Sections: "/>
+            <p:inputText id="sections" value="#{articleSearchBacking.selectedSectionsLabels}" disabled="true"/>
+
+            <p:outputLabel for="includeSubSections" value="SubSections: "/>
+            <p:selectBooleanButton id="includeSubSections" value="#{articleSearchBacking.includeSubSections}"
+                                   onLabel="Yes" offLabel="No" onIcon="ui-icon-check" offIcon="ui-icon-close" style="width:60px" />
+
+
+            <p:outputLabel for="orderBy" value="Order by:" />
+            <p:selectOneMenu id="orderBy" value="#{articleSearchBacking.selectedOrderBy}">
+                <f:selectItems value="#{articleSearchBacking.orderByList}" />
+            </p:selectOneMenu>
+
+            <p:outputLabel for="orderType" value="Order type:" />
+            <p:selectOneMenu id="orderType" value="#{articleSearchBacking.selectedOrderType}">
+                <f:selectItems value="#{articleSearchBacking.orderTypeList}" />
+            </p:selectOneMenu>
+
+
+            <p:outputLabel for="publishStartTime" value="Publish Start:" />
+            <p:calendar id="publishStartTime" value="#{articleSearchBacking.publishStartTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+            <p:outputLabel for="publishEndTime" value="Publish End:" />
+            <p:calendar id="publishEndTime" value="#{articleSearchBacking.publishEndTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+
+            <p:outputLabel for="expireStartTime" value="Expire Start:" />
+            <p:calendar id="expireStartTime" value="#{articleSearchBacking.expireStartTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+            <p:outputLabel for="expireEndTime" value="Expire End:" />
+            <p:calendar id="expireEndTime" value="#{articleSearchBacking.expireEndTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+
+            <p:outputLabel for="lastModifiedStartTime" value="Last Modified Start:" />
+            <p:calendar id="lastModifiedStartTime" value="#{articleSearchBacking.lastModifiedStartTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+            <p:outputLabel for="lastModifiedEndTime" value="Last Modified End:" />
+            <p:calendar id="lastModifiedEndTime" value="#{articleSearchBacking.lastModifiedEndTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+
+            <p:outputLabel for="activateStartTime" value="Activate Start:" />
+            <p:calendar id="activateStartTime" value="#{articleSearchBacking.activateStartTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+            <p:outputLabel for="activateEndTime" value="Activate End:" />
+            <p:calendar id="activateEndTime" value="#{articleSearchBacking.activateEndTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+
+            <p:outputLabel for="startTime" value="Start:" />
+            <p:calendar id="startTime" value="#{articleSearchBacking.startTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+            <p:outputLabel for="endTime" value="End:" />
+            <p:calendar id="endTime" value="#{articleSearchBacking.endTime}" pattern="dd-MM-yyyy  HH:mm:ss" />
+
+
+            <p:outputLabel for="tagsURI" value="Tags URI: "/>
+            <p:inputText id="tagsURI" value="#{articleSearchBacking.tagsURI}"/>
+
+            <p:outputLabel for="tagsSearchType" value="Tags search type:" />
+            <p:selectOneMenu id="tagsSearchType" value="#{articleSearchBacking.selectedTagsSearchType}">
+                <f:selectItems value="#{articleSearchBacking.tagsSearchTypeList}" />
+            </p:selectOneMenu>
+
+
+        </p:panelGrid>
+
+        <br/><br/>
+    </h:form>
+
+    <h:messages id="messages" class="errorMessage"/>
+
+</html>

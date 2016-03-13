@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0403ed4d-21cb-4cfb-9359-23f735c154b0" name="Default" comment="" />
+    <ignored path="rsiInternalAPP.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/web.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456328852678" ignored="false" />
+    <file path="/simple.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445529280826" ignored="false" />
+    <file path="/faces-config.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449895282918" ignored="false" />
+    <file path="/login.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451927293805" ignored="false" />
+    <file path="/header.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446966819945" ignored="false" />
+    <file path="/messages.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445885030737" ignored="false" />
+    <file path="/a.dummy" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457701688528" ignored="false" />
+    <file path="/rsiapp.css" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448423692970" ignored="false" />
+    <file path="/User.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445520729894" ignored="false" />
+    <file path="/LoginManager.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446369374000" ignored="false" />
+    <file path="/UserBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445696936200" ignored="false" />
+    <file path="/main.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451837480535" ignored="false" />
+    <file path="/ArticleSearchBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451995896145" ignored="false" />
+    <file path="/bookSearch.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445544673970" ignored="false" />
+    <file path="/Article.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452067848740" ignored="false" />
+    <file path="/menu.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445545816529" ignored="false" />
+    <file path="/articleSearch.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451995152918" ignored="false" />
+    <file path="/AuthorizationListener.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446192205302" ignored="false" />
+    <file path="/EscenicManager.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445591772634" ignored="false" />
+    <file path="/Dummy.txt" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457793396833" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/META-INF/escenic/publication-resources/escenic/content-type" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455791961595" ignored="false" />
+    <file path="/content-type" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455542504879" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/actions/intlay/NowAndNextSrgPlayerAction.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445609403386" ignored="false" />
+    <file path="/articleBrowser.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445768247299" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/EPG.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453389689212" ignored="false" />
+    <file path="/EPG.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453389689212" ignored="false" />
+    <file path="/ToolbarBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445670130518" ignored="false" />
+    <file path="/ArticleBrowserBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450941758887" ignored="false" />
+    <file path="/EscenicService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452446971362" ignored="false" />
+    <file path="/TreeItemData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445701933636" ignored="false" />
+    <file path="/EscenicSectionItemData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445983633225" ignored="false" />
+    <file path="/EscenicContentItemData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445701942053" ignored="false" />
+    <file path="/EscenicCache.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447925233590" ignored="false" />
+    <file path="/bootstrapJS.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445752904670" ignored="false" />
+    <file path="/bootstrapCSS.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445752895621" ignored="false" />
+    <file path="/rsiapp.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450044921630" ignored="false" />
+    <file path="/escenicTabs.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445768232985" ignored="false" />
+    <file path="/EscenicTabsBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450713857297" ignored="false" />
+    <file path="/escenicSectionsTree.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450939422480" ignored="false" />
+    <file path="/articlesBrowser.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445939358390" ignored="false" />
+    <file path="/LoginBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451045210130" ignored="false" />
+    <file path="/configuration.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445783123490" ignored="false" />
+    <file path="/navitem.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445790894481" ignored="false" />
+    <file path="/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457865083911" ignored="false" />
+    <file path="/escenicBrowser.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450242272489" ignored="false" />
+    <file path="/north.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445936427877" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/DescribedByInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447066060573" ignored="false" />
+    <file path="/DescribedByInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447066062315" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/EPGFieldsCache.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453384102562" ignored="false" />
+    <file path="/EPGFieldsCache.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453383819177" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/Statistics.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457597193705" ignored="false" />
+    <file path="/Statistics.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457597193058" ignored="false" />
+    <file path="/escenicTabsView.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446150764937" ignored="false" />
+    <file path="/EscenicTab.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450386555069" ignored="false" />
+    <file path="/ThemeChoices.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445922567812" ignored="false" />
+    <file path="/ContentTypesBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445951354051" ignored="false" />
+    <file path="/northWestCenter.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446284583734" ignored="false" />
+    <file path="/LazyView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446113021460" ignored="false" />
+    <file path="/ArticleService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445975311269" ignored="false" />
+    <file path="/LazyArticleDataModel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446313203762" ignored="false" />
+    <file path="/LazySorter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445975248632" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/Escenic.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455614611313" ignored="false" />
+    <file path="/Escenic.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455614051061" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/WEB-INF/web.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456239168293" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455522998798" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/podcast/view/default.jsp" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446462689022" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/podcast/view/helpers/list.jsp" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446025236317" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/WEB-INF/struts-config-sendReport.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446044945290" ignored="false" />
+    <file path="/config.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450774760267" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/JsonWidgetProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446068456515" ignored="false" />
+    <file path="/ContentTypes.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446101293678" ignored="false" />
+    <file path="/ContentType.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450718325969" ignored="false" />
+    <file path="/escenicHeader.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452104964302" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/HbbTV.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447083496758" ignored="false" />
+    <file path="/HbbTV.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447081993332" ignored="false" />
+    <file path="/articleSearchResult.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450713729832" ignored="false" />
+    <file path="/escenicSearch.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446283285141" ignored="false" />
+    <file path="/LazyViewBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446270934512" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/util/CustomSearchUtils.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446202905309" ignored="false" />
+    <file path="/EscenicState.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446352485583" ignored="false" />
+    <file path="/escenicLayers.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446283855849" ignored="false" />
+    <file path="/escenicArticlesTabView.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452064849081" ignored="false" />
+    <file path="/articles.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446284742565" ignored="false" />
+    <file path="/messages.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446363675722" ignored="false" />
+    <file path="/article.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450937151963" ignored="false" />
+    <file path="/EscenicProperties.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446352162727" ignored="false" />
+    <file path="/Message.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446362815695" ignored="false" />
+    <file path="/MessagesView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449150355939" ignored="false" />
+    <file path="/LazySearchResultViewBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448190881490" ignored="false" />
+    <file path="/Properties.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448093805817" ignored="false" />
+    <file path="/LazySearchResultDataModel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451995303826" ignored="false" />
+    <file path="/Program.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456396951182" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/libraries/global-jar/src/main/java/ch/srg/transactionfilters/VMEReconciliationFilter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448872454021" ignored="false" />
+    <file path="/VMEReconciliationFilter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448872452396" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/EPGLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456226173037" ignored="false" />
+    <file path="/EPGLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456226173345" ignored="false" />
+    <file path="/fragment.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457016859045" ignored="false" />
+    <file path="/programme.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447994134749" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/RSICarouselWidgetScrollableViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446646197185" ignored="false" />
+    <file path="/programmeVideo.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447961081434" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/webSeries/view/episodesWebSeries.jsp" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446716760810" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/topStory/model/content-type" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446716760810" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/actions/ctype2json/LiveStreaming.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446716760811" ignored="false" />
+    <file path="/liveStreaming.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446729854842" ignored="false" />
+    <file path="/LiveStreaming.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045692610" ignored="false" />
+    <file path="/transcodableAudio.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447767616065" ignored="false" />
+    <file path="/TranscodableAudio.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045747275" ignored="false" />
+    <file path="/ProgramVideo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045724697" ignored="false" />
+    <file path="/TranscodableVideo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045755609" ignored="false" />
+    <file path="/transcodableVideo.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447961141602" ignored="false" />
+    <file path="/gallery.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447842610521" ignored="false" />
+    <file path="/keyFrame.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447842660221" ignored="false" />
+    <file path="/KeyFrame.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045682852" ignored="false" />
+    <file path="/picture.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446757953288" ignored="false" />
+    <file path="/Picture.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045702145" ignored="false" />
+    <file path="/story.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447842739345" ignored="false" />
+    <file path="/Story.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045740761" ignored="false" />
+    <file path="/Property.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448424603341" ignored="false" />
+    <file path="/video.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446972207720" ignored="false" />
+    <file path="/UIMediaComponent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446972970014" ignored="false" />
+    <file path="/MediaSource.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446905692269" ignored="false" />
+    <file path="/MediaTrack.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446906205147" ignored="false" />
+    <file path="/audio.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446911504878" ignored="false" />
+    <file path="/source.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446907887062" ignored="false" />
+    <file path="/track.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446908021896" ignored="false" />
+    <file path="/UIMediaTrackComponent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446908774709" ignored="false" />
+    <file path="/programmeAudio.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447842721376" ignored="false" />
+    <file path="/ProgramAudio.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045716482" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/EPGEntry.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453389626748" ignored="false" />
+    <file path="/EPGEntry.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453389626748" ignored="false" />
+    <file path="/GalleryImage.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447086617953" ignored="false" />
+    <file path="/Gallery.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045666387" ignored="false" />
+    <file path="/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457001184212" ignored="false" />
+    <file path="/dummy.txt" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447106263097" ignored="false" />
+    <file path="/CreateImageThread.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447107643850" ignored="false" />
+    <file path="/build.sh" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447142274806" ignored="false" />
+    <file path="/notes" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452787645415" ignored="false" />
+    <file path="/releaseNote.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451046693050" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/actions/ctype2json/util/AudioUrlParser.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447227510124" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/EPGSliderScheduleViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447246182429" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/EPGPrimeTimeWeekScheduleViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447246182429" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/EPGPrimeTimeWeekMoreChannelViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447246182429" ignored="false" />
+    <file path="/dialogs.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447247688978" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/podcast/view/feed.jsp" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447316104600" ignored="false" />
+    <file path="/EscenicField.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452443235120" ignored="false" />
+    <file path="/VideoInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447562706440" ignored="false" />
+    <file path="/AudioInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447563223228" ignored="false" />
+    <file path="/AudioMediaEntryInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447563792039" ignored="false" />
+    <file path="/VideoMediaEntryInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447563813656" ignored="false" />
+    <file path="/EscenicLink.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452015237536" ignored="false" />
+    <file path="/CheckArticleUpdatesTimer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447615064935" ignored="false" />
+    <file path="/HistoryLog.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447667029604" ignored="false" />
+    <file path="/EscenicType.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452421677860" ignored="false" />
+    <file path="/HttpGetInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447924736895" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/template/widgets/podcast/view/player.jsp" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447928225818" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/TopStoryWidgetCustomViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447928225818" ignored="false" />
+    <file path="/ImageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450384326417" ignored="false" />
+    <file path="/segmentedProgrammeVideo.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447968537715" ignored="false" />
+    <file path="/SegmentedProgramVideo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448045733923" ignored="false" />
+    <file path="/escenicInputField.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454340356810" ignored="false" />
+    <file path="/ComplexColumnModel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448115910972" ignored="false" />
+    <file path="/ArticleTableData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450385603509" ignored="false" />
+    <file path="/MediaInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448183591411" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/VedaRequestHandler.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456847471226" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/VedaHttpServer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457000510397" ignored="false" />
+    <file path="/VedaHttpServer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457000505570" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/resources/config.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657926961" ignored="false" />
+    <file path="/LouiseLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453456934455" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/java/com/service/louiseLoader/LouiseLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554531007" ignored="false" />
+    <file path="/LouiseLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456406619878" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/loader/LouiseLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453306268139" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/resources/quartz_data.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554525892" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/java/com/service/louiseLoader/LouiseAndVedaLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554510329" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448530738300" ignored="false" />
+    <file path="/LouiseAndVedaLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448550376213" ignored="false" />
+    <file path="/VedaRequestHandler.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456829327362" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657926961" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657926961" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448555169575" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/java/com/service/vedaLoader/VedaLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554910494" ignored="false" />
+    <file path="/VedaLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554899218" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/webapp/WEB-INF/web.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448554868947" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/entity/VedaLine.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456830758083" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/Brand.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/BroadcastEvent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662899954" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/Person.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662909626" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/Product.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455184252494" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/Segment.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662924522" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/Series.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455184291680" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/utility/VedaFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454846637669" ignored="false" />
+    <file path="/LouiseFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456393427031" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/utility/LouiseFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455018253140" ignored="false" />
+    <file path="/VedaFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454846637669" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457001029504" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseAndVedaService/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448636769374" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/VedaLine.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456829712195" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/entity/VedaLinePK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/VedaLinePK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448642885111" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662447281" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/utility/HttpFeedFetcher.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/BroadcastEventPK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessor/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657494220" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessor/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657494220" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/entity/PersonPK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessor/src/main/resources/quartz_data.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657494220" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessor/src/main/webapp/WEB-INF/web.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448657494220" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456936174649" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448658283268" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/resources/quartz_data.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455795608812" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457019258806" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/utility/HttpFeedFetcher.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662491064" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/WEB-INF/web.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456328852678" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456412854732" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseLoader/LouiseLoaderService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453882897291" ignored="false" />
+    <file path="/EscenicLock.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452015791915" ignored="false" />
+    <file path="/quartz_data.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455121259541" ignored="false" />
+    <file path="/EscenicSection.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450384478039" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/ImageResizer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449051875138" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/vedaCore/src/main/java/com/veda/utility/SubscribedChannel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/SubscribedChannel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449133717233" ignored="false" />
+    <file path="/LocksPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449244780288" ignored="false" />
+    <file path="/LockChanged.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450384682648" ignored="false" />
+    <file path="/chat.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450242717162" ignored="false" />
+    <file path="/ChatBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450382469807" ignored="false" />
+    <file path="/BroadcastPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449238927551" ignored="false" />
+    <file path="/UserMessage.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449238979024" ignored="false" />
+    <file path="/UserPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449239087273" ignored="false" />
+    <file path="/FacesMessagePushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449246614626" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/artifacts/rsiInternalAPP_war_exploded.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449744442093" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449912302887" ignored="false" />
+    <file path="/MessageInfoPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449328389605" ignored="false" />
+    <file path="/MessageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449328278490" ignored="false" />
+    <file path="/ComplexValue.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450115593858" ignored="false" />
+    <file path="/ckEditor.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452016109347" ignored="false" />
+    <file path="/index.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449846731632" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/index.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449846731632" ignored="false" />
+    <file path="/State.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449674700977" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/server-admin/common/var/lib/escenic/solr/conf/schema.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452439629884" ignored="false" />
+    <file path="/schema.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449821489064" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/LouiseView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456327719488" ignored="false" />
+    <file path="/LouiseView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456327972468" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louise.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/louise.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450792881729" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/vedaView/VedaView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456908644086" ignored="false" />
+    <file path="/VedaView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456908193967" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/veda.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456908517571" ignored="false" />
+    <file path="/veda.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456908390309" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseAndVeda/LouiseAndVedaView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseAndVeda.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456326832193" ignored="false" />
+    <file path="/LouiseAndVedaView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450343794017" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseAndVeda/LouiseVedaEvent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453283450203" ignored="false" />
+    <file path="/LouiseVedaEvent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450343630934" ignored="false" />
+    <file path="/NewArticle.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450408473748" ignored="false" />
+    <file path="/MyFileUploadRenderer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1449895128067" ignored="false" />
+    <file path="/EscenicFieldGroup.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450090942468" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/build.sh" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450259186307" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/resources/build.number" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450259084899" ignored="false" />
+    <file path="/MimeTypes.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450434354994" ignored="false" />
+    <file path="/BroadcastEvent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662899123" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/resources/js/metadataProcessorService.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456323681129" ignored="false" />
+    <file path="/configure.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450940931753" ignored="false" />
+    <file path="/simple_2" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450622242482" ignored="false" />
+    <file path="/FieldConfiguration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450761526422" ignored="false" />
+    <file path="/ConfigureBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450936244438" ignored="false" />
+    <file path="/ContentTypeConverter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450718529727" ignored="false" />
+    <file path="/Configuration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450938087956" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/product.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450792991913" ignored="false" />
+    <file path="/ArticlesTabsBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450940294259" ignored="false" />
+    <file path="/login2.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451038356664" ignored="false" />
+    <file path="/login.css" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451047313877" ignored="false" />
+    <file path="/MyCkEditor.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452065510558" ignored="false" />
+    <file path="/MyCkEditorComponent.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452001487021" ignored="false" />
+    <file path="/EscenicTypeGroup.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452009692467" ignored="false" />
+    <file path="/articleUser.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452068070891" ignored="false" />
+    <file path="/articleAdministrator.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452067047171" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/ProfileMenuWidgetDefaultViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452519775524" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/ResultCenterWidgetLiveTodayViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457597288845" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/1.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452612075026" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/2" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452612114644" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/VEDAEntry.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453718039497" ignored="false" />
+    <file path="/VEDAEntry.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453716996562" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/LOUISEEntry.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452843627826" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/view/processor/MetaDataLoaderHbbTVViewProcessor.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1452872566910" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCore/src/main/java/com/louise/loader/LouiseLoaderMogador.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453190542831" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louise/loader/LouiseLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453365838207" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louise/utility/LouiseFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453365838207" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louise/entity/Program.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453365838207" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louise/entity/Product.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453300611874" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/libraries/global-jar/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453386537403" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454789815179" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/utility/LouiseFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456396522885" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/utility/HttpFeedFetcher.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454574282709" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Program.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456406083982" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/loader/LouiseLoader.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456412847595" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louise/utility/HttpFeedFetcher.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453365837838" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMogador.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453891668617" ignored="false" />
+    <file path="/louiseMogador.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453891668617" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/LouiseMogadorView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453888564628" ignored="false" />
+    <file path="/LouiseMogadorView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453887730778" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453460309894" ignored="false" />
+    <file path="/HttpFeedFetcher.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454573807588" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Channel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453824044957" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/loader/Channel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453824112322" ignored="false" />
+    <file path="/Channel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453824104117" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/widget/controller/MetaDataLoaderController.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453880937846" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseLoader/LouiseLoaderMogadorService.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453882926904" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMatricardi.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456328043984" ignored="false" />
+    <file path="/louiseMatricardi.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456327739591" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/metadataProcessorHeader.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454342077469" ignored="false" />
+    <file path="/metadataProcessorHeader.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453890871479" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/mogador/LouiseMogadorView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453891246262" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/mogador/ProgramsListView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456327460477" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Product.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456320131742" ignored="false" />
+    <file path="/Product.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456135016472" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Type.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453900024031" ignored="false" />
+    <file path="/Type.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453893939020" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/CultPlus.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457792837268" ignored="false" />
+    <file path="/CultPlus.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457792475850" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/util/MetaDataLoaderUtility.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457604714076" ignored="false" />
+    <file path="/MetaDataLoaderUtility.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457604708147" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/webapp/META-INF/escenic/publication-resources/escenic/layout-group" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454063803583" ignored="false" />
+    <file path="/layout-group" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453979183010" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/actions/ctype2json/services/intlay/AssetIndexer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1453979261412" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMogadorProduct.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456491696581" ignored="false" />
+    <file path="/louiseMogadorProduct.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456491696021" ignored="false" />
+    <file path="/ProgramsListView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456327199411" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMogadorPrograms.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456908547608" ignored="false" />
+    <file path="/louiseMogadorPrograms.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456841879465" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/noEntity/Personality.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454328198889" ignored="false" />
+    <file path="/Personality.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454791466824" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Personality.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456320225036" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/mogador/ProductDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456829396568" ignored="false" />
+    <file path="/ProductDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456520790750" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Content.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454424724417" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMogadorProgram.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456388212604" ignored="false" />
+    <file path="/louiseMogadorProgram.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456231827522" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/mogador/ProgramDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456234523735" ignored="false" />
+    <file path="/ProgramDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456234523735" ignored="false" />
+    <file path="/louiseAndVeda.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456325748817" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456226936561" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/utility/DefaultTrustManager.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454573070423" ignored="false" />
+    <file path="/Person.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662908811" ignored="false" />
+    <file path="/Segment.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662924097" ignored="false" />
+    <file path="/Series.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454662932809" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/CustomMysqlDialect.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454789712367" ignored="false" />
+    <file path="/CustomMysqlDialect.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454789591062" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/PersonalityPK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454791412422" ignored="false" />
+    <file path="/PersonalityPK.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454791306778" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/vedaDetails.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454839193257" ignored="false" />
+    <file path="/vedaDetails.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454841592663" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/vedaView/VedaDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454839621982" ignored="false" />
+    <file path="/VedaDetailView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1454839569134" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/vedaDetail.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456830524519" ignored="false" />
+    <file path="/vedaDetail.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456830524519" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/note.txt" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456408623775" ignored="false" />
+    <file path="/note.txt" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456408622318" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/webapp/louiseMogadorProducts.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455198657555" ignored="false" />
+    <file path="/louiseMogadorProducts.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455198587518" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/mogador/ProductsListView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455199261581" ignored="false" />
+    <file path="/ProductsListView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455199102787" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/shared-war/src/main/java/ch/srg/restapi/AppSport.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457691385925" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Serie.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455701959721" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Version.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456222333490" ignored="false" />
+    <file path="/Version.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456222327753" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/home.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456827781036" ignored="false" />
+    <file path="/home.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456827617744" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/utility/segmented-videos.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1455868248724" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Press.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456128017881" ignored="false" />
+    <file path="/Press.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456055580934" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/myCultplus.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456752500616" ignored="false" />
+    <file path="/myCultplus.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456739766838" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/SubTitle.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456224026664" ignored="false" />
+    <file path="/SubTitle.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456223990193" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/louiseCoreMogador/src/main/java/com/louiseMogador/entity/Territory.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456224217432" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/resources/js/common.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456322200366" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/metadataProcessorService/src/main/java/com/service/louiseView/LouiseMatricardiView.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456328099098" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/search.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457623686664" ignored="false" />
+    <file path="/search.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457599098545" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/common.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456823799051" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/search.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457607224325" ignored="false" />
+    <file path="/search.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456825289864" ignored="false" />
+    <file path="/common.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1456762047216" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/home.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457446980415" ignored="false" />
+    <file path="/home.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457446978825" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457015976631" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/entity/Event.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457434121623" ignored="false" />
+    <file path="/Event.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457018946616" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/resources/META-INF/persistence.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457015976631" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/resources/config.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457001143507" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/resources/log4j.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457015976631" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/utility/TurboPlayerHttpServer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457001682238" ignored="false" />
+    <file path="/TurboPlayerHttpServer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457016099457" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/TurboPlayerHttpServer.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457019142928" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/entity/VedaRequestHandler.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457015273250" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/TurboPlayerRequestHandler.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457019116368" ignored="false" />
+    <file path="/TurboPlayerRequestHandler.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457019031433" ignored="false" />
+    <file path="$PROJECT_DIR$/../metadataProcessor/turboPlayer/src/main/java/com.turboplayer/utility/TurboPlayerFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457019170798" ignored="false" />
+    <file path="/TurboPlayerFacade.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457016947953" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/index.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457709395406" ignored="false" />
+    <file path="/index.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457686603931" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/article.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457709983459" ignored="false" />
+    <file path="/article.html" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457709944878" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/article.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457708326574" ignored="false" />
+    <file path="/article.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457691828491" ignored="false" />
+    <file path="$PROJECT_DIR$/../north/publications/rsi/src/main/webapp/static/external-site/cult-plus/myJs/index.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457706009083" ignored="false" />
+    <file path="/index.js" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457686537907" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/MimeTypes.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/MediaInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/HistoryLog.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/State.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ConfigureBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/resources/myCkEditor/MyCkEditor.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Configuration/Configuration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/SearchResult/ArticleTableData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/LockChanged.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ArticleSearchBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/SearchResult/LazySearchResultDataModel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Configuration/FieldConfiguration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/MediaEntryInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/LazySearchResultViewBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ArticlesTabsBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ThemeChoices.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/NewArticle.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/ContentTypeConverter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/MessageInfoPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/LocksPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/Article.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/ContentType.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ChatBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/LoginBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/EscenicTab.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/ImageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/MessageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rsiInternalAPP" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="EscenicService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="17" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="16" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1451927302000" expanded="true" signature="1203:1236" placeholder="{...}" />
+                <marker date="1451927302000" expanded="true" signature="1431:1459" placeholder="{...}" />
+                <marker date="1451927302000" expanded="true" signature="1507:1522" placeholder="{...}" />
+                <marker date="1451927302000" expanded="true" signature="2339:2352" placeholder="{...}" />
+                <marker date="1451927302000" expanded="true" signature="2418:2435" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configure.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/admin/configure.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="32" selection-start="1111" selection-end="1126" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1451758394000" expanded="true" signature="5732:5749" placeholder="{...}" />
+                <marker date="1451758394000" expanded="true" signature="8700:8717" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleBrowserBacking.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/backing/ArticleBrowserBacking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="428" column="72" selection-start="14710" selection-end="14743" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/myCkEditor/MyCkEditor.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/protected/views/escenicArticlesTabView.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/protected/views/helpers/articleAdministrator.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rsi/backing/model/ArticleTabs/Article.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/protected/views/helpers/articleUser.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common/escenicHeader.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rsi/service/EscenicType.java" />
+        <option value="$PROJECT_DIR$/ContentDescriptionProgramme.xml" />
+        <option value="$USER_HOME$/a.xml" />
+        <option value="$PROJECT_DIR$/ContentDescriptionProgrammeVideo.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rsi/service/EscenicField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rsi/service/EscenicService.java" />
+        <option value="$PROJECT_DIR$/notes" />
+        <option value="$PROJECT_DIR$/src/main/webapp/protected/views/helpers/escenicInputField.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="23" />
+    <option name="width" value="1226" />
+    <option name="height" value="705" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="08971eeb-7c5f-4e32-8dcf-4075469a4380">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/src/main/webapp" web="rsiInternalAPP" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="bc01375d-9165-4115-8b8a-9cbb2ee6c65f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="d564d296-0724-42ce-bdf3-60ca19b6e97e">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rsi.backing.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/protected/views/helpers" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/myCkEditor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/protected/pages/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/img" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0403ed4d-21cb-4cfb-9359-23f735c154b0" name="Default" comment="" />
+      <created>1445500840029</created>
+      <updated>1445500840029</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="23" width="1226" height="705" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6177474" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.320339" sideWeight="0.61880344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3811966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/notes">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/escenicBrowser.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="105" selection-end="149" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common/chat.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.7080293" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="72" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2026" column="35" selection-start="90717" selection-end="90736" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/views/articleSearch.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="124" selection-start="6137" selection-end="6157" vertical-scroll-proportion="0.03164557" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/views/articleSearchResult.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="27" selection-start="2052" selection-end="2135" vertical-scroll-proportion="0.030181086" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/views/helpers/escenicInputField.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="50" selection-start="243" selection-end="287" vertical-scroll-proportion="0.028846154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/views/escenicArticlesTabView.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="1555" selection-end="4928" vertical-scroll-proportion="0.7980769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common/escenicHeader.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="0" selection-end="313" vertical-scroll-proportion="-0.115384616" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="16" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1451927302000" expanded="true" signature="1203:1236" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="1431:1459" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="1507:1522" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="2339:2352" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="2418:2435" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/admin/configure.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="1111" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1451758394000" expanded="true" signature="5732:5749" placeholder="{...}" />
+            <marker date="1451758394000" expanded="true" signature="8700:8717" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/backing/ArticleBrowserBacking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="428" column="72" selection-start="14710" selection-end="14743" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>rsiInternalAPP:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>rsiInternalAPP</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.gson:gson:2.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

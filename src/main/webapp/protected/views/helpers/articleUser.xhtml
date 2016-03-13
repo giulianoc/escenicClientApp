@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:media="http://xmlns.jcp.org/jsf/composite/media">
+
+    <p:accordionPanel
+        id="articleUserView"
+        multiple="true"
+        dynamic="true"
+        cache="false"
+        onTabShow="initDND()">
+
+        <p:tab title="Metadata">
+
+            <!-- begin: next two tags are used to manage the push -->
+            <h:panelGroup styleClass="hiddenArticleId">
+                <p:outputLabel style="display: none" value="#{tab.article.metadataFields['com.escenic.displayId'].stringValue}" />
+            </h:panelGroup>
+            <!--
+Remove the comment when/if sectionsFieldSet and relatedLinks will be added to this view
+            <p:commandButton style="display: none"
+                styleClass="locksToBeUpdated" global="false"
+                update="extendedMetadataDataTable :escenicTabViewForm:escenicArticlesTabView:articleUserView:sectionsFieldSet :escenicTabViewForm:escenicArticlesTabView:articleUserView:relatedLinks" />
+            -->
+            <!-- end -->
+
+            <p:dataTable id="extendedMetadataDataTable" var="metadataKeyField"
+                value="#{tab.article.userMetadataFieldsKeys}" >
+
+                <p:column style="width: 10%">
+
+                    <p:outputLabel
+                            value="#{tab.article.metadataFields[metadataKeyField].escenicType.label}   "
+                            style="font-weight: bold" />
+
+                    <p:graphicImage width="24" height="24"
+                                    id="lockIcon"
+                                    rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null}"
+                                    name="img/locked.jpg" />
+                    <p:tooltip
+                        for="lockIcon"
+                        rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+                        value="Locked by myself"
+                        showEffect="clip" hideEffect="explode" />
+                    <p:tooltip
+                            for="lockIcon"
+                            rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+                            value="#{tab.article.metadataFields[metadataKeyField].externalLock.content}"
+                            showEffect="clip" hideEffect="explode" />
+                    <p:contextMenu for="lockIcon">
+                        <p:menuitem value="Send a message to '#{tab.article.metadataFields[metadataKeyField].externalLock.userName}' to unlock" icon="ui-icon-mail-closed"
+                                    update=":chatForm"
+                                    action="#{chatBacking.sendMessageToUnlock(tab.article.metadataFields[metadataKeyField].externalLock.userName, tab.article.metadataFields['com.escenic.displayId'].stringValue, tab.article.metadataFields[metadataKeyField].fieldName)}"/>
+                        <p:menuitem value="Steal lock" icon="ui-icon-locked"
+                            update="extendedMetadataDataTable"
+                            action="#{tab.article.stealLock(tab.article.metadataFields[metadataKeyField])}"/>
+                    </p:contextMenu>
+
+                    <p:graphicImage width="24" height="24"
+                                    id="pencilIcon"
+                                    rendered="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null or tab.article.metadataFields[metadataKeyField].changeType != 'ESCENIC_NOCHANGE'}"
+                                    name="img/pencil.jpg" />
+                    <!--
+                    <p:commandButton id="pencilIcon"
+                        rendered="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null or tab.article.metadataFields[metadataKeyField].changeType != 'ESCENIC_NOCHANGE'}"
+                        icon="ui-icon-pencil" />
+                    -->
+                    <p:tooltip for="pencilIcon" value="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null ? 'locked by myself' : 'modified but no lock set'}"
+                               showEffect="clip" hideEffect="explode" />
+
+                    <!--
+                    <p:contextMenu for="logo" my="right top" at="left top">
+                        <p:menuitem value="test" icon="ui-icon-alert" action="#{bean.action}" />
+                    </p:contextMenu>
+                    -->
+                </p:column>
+
+                <p:column>
+
+                    <ui:include src="escenicInputField.xhtml">
+                        <ui:param name="setName" value="metadataFields" />
+                        <ui:param name="initialEscenicFieldOfAComplex" value="" />
+                        <ui:param name="keyField" value="#{metadataKeyField}" />
+                        <ui:param name="fields" value="#{tab.article.metadataFields}" />
+                        <ui:param name="nestedLevel" value="0" />
+                        <ui:param name="articleViewToBeUpdated" value="articleUserView" />
+                    </ui:include>
+
+                </p:column>
+
+            </p:dataTable>
+
+        </p:tab>
+
+    </p:accordionPanel>
+
+    <!--
+    <p:outputLabel rendered="tab.article.relatedLinksKeys.size == 0" value="No related links are present in the article" style="color: red; font-weight: bold" />
+    -->
+</html>

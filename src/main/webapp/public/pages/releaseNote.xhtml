@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui">
+
+<p:dialog header="Release Notes" appendTo="@(body)" widgetVar="releaseNoteDialog" modal="true"
+          showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+    <p:scrollPanel mode="native" style="width:550px;height:400px">
+
+        <ul>
+            <li>2015-12-??</li>
+            <ul>
+                <li>New login page</li>
+                <li>Articles into the related table are now links to load and display the article</li>
+                <li>Change state implemented</li>
+                <li>Any content type can be added: picture, video, audio ...</li>
+                <li>binary of a picture is now displayed in the Media tab</li>
+                <li>RSI Chat is now a link at the top/header of the page</li>
+                <li>Related links and relative locks work fine. Drag and drop is implemented</li>
+                <li>Added a message where drag and drop could be used</li>
+                <li>Displayed the groups of the metadata, the entry metadata are all added in a group</li>
+                <li>To add a section, the 'button' was replaced by a 'drag and drop' mechanism</li>
+                <li>Metadata of the articles are now displayed using a tabview (before it was an accordion)</li>
+                <li>The metadata of the article are now read using the 'content-description' information (before it was used the 'pyload' information)</li>
+            </ul>
+            <li>2015-11-30</li>
+            <ul>
+                <li>managed the lock of complex field (lock of the parent field)</li>
+                <li>Save content: added a confirmation dialog</li>
+                <li>Added the option to send a message to unlock a field</li>
+                <li>Using of the MAC growl notification in an overlay</li>
+                <li>added the option to steal a lock</li>
+                <li>implementated the push mechanism for lock/chat</li>
+                <li>Added a chat to the APP in order to send messages to a specific user or to all</li>
+                <li>The information about the related content (picture, title, state, ...) are now displayed</li>
+                <li>Several loading of the article (pictures, history logs, sections, ...) are now done only when needed</li>
+                <li>Added the management of the sections</li>
+                <li>Added the lock management based on a single field</li>
+                <li>Added tooltip on every field</li>
+                <li>Media/player are now displayed in the article tab</li>
+                <li>growl are now used for the messages</li>
+                <li>Added the content type and section path among the metadata of the article</li>
+                <li>Added a successful message at the end of the save content</li>
+                <li>Added the State to the search table</li>
+            </ul>
+            <li>2015-11-24</li>
+            <ul>
+                <li>Introduced the accordion widget to display the Article metadata</li>
+                <li>In case of an enumerative type, a dropdown widget is used</li>
+                <li>In case of a complex field a table inside the main table is used</li>
+                <li>The input of every metadata are validated based on the constraints specified by the model</li>
+                <li>All the metadata are dinamically generated based on the model</li>
+                <li>All the content types are now managed</li>
+                <li>Implemented the saving of the article</li>
+                <li>The content types are now sorted</li>
+                <li>The type of every field/metadata is now retrieved using the relative model (content type)</li>
+                <li>A message in red is displayed in case the content you are looking was changed by others</li>
+                <li>Added the 'refresh' button/functionality to be able to refresh a content</li>
+                <li>Added a toolbar for the content view</li>
+                <li>Reimplemented the loading of the contents managing even nested payload</li>
+                <li>Added the 'Close All' and 'Close Others' to the articles tabs</li>
+                <li>Added the information about the escenic web service host in the header</li>
+                <li>The release notes was changed to a dialog</li>
+                <li>The search is now implemented using a direct access to Solr (no passing through Escenic)</li>
+                <li>Added the reset button for the search</li>
+            </ul>
+            </ul>
+        <ul>
+            <li>2015-11-10</li>
+            <ul>
+                <li>Added a modal progressBar every time it is processing (ajax call running)</li>
+                <li>Replace the text of the buttons with icons</li>
+                <li>The search is triggered as soon as a section is selected/unselected</li>
+                <li>Management of the Profiles in the Search section (save, delete, load)</li>
+                <li>Added the Release note link</li>
+                <li>Display the current version</li>
+                <li>Display the current user name</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>2015-11-09</li>
+            <ul>
+                <li>Columns added to the ResultResearch table: publishTime, StartTime and StartTime</li>
+                <li>Management of the images/gallery inside the 'detail' article pages</li>
+            </ul>
+        </ul>
+
+    </p:scrollPanel>
+
+</p:dialog>
+
+</html>

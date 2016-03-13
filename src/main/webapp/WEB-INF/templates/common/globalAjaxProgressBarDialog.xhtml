@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition>
+
+    <p:dialog header="Loading..." appendTo="@(body)" widgetVar="globalAjaxProgressBarDialog" modal="true"
+              showEffect="fade" hideEffect="fade" resizable="false" draggable="false">
+
+        <!--
+        <h:form id="globalAjaxProgressBarDialogForm">
+        -->
+        <!--
+        <p:progressBar widgetVar="globalAjaxProgressBar" value="100" labelTemplate="" styleClass="animated" style="width:300px" />
+        -->
+        <p:graphicImage name="img/ajax-loader.gif" />
+        <!--
+        </h:form>
+        -->
+    </p:dialog>
+
+</ui:composition>
+</html>

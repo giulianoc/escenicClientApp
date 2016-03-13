@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:form id="resultsForm">
+
+    <!-- <p:growl id="resultsFormGrowl" showDetail="true" life="2000" ajax di resultsDataTable /> -->
+
+    <h:panelGroup id="results">
+        <p:dataTable
+            id="resultsDataTable"
+            var="articleTableData"
+            value="#{lazySearchResultViewBacking.lazySearchResultDataModel}"
+            paginator="true"
+            rows="150"
+            rowIndexVar="rowId"
+            paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+            currentPageReportTemplate="(Entries: {startRecord} - {endRecord} of {totalRecords}, Page: {currentPage}/{totalPages})"
+            rowsPerPageTemplate="100,150,200"
+            selectionMode="single"
+            selection="#{lazySearchResultViewBacking.selectedArticleTableData}"
+            lazy="true">
+
+            <p:ajax update=":escenicTabViewForm:escenicArticlesTabView" event="rowSelect"
+                listener="#{articlesTabsBacking.searchResultsRowSelect}"
+            />
+
+            <p:column style="width:20px">
+                <p:outputLabel id="dragIcon" styleClass="ui-icon ui-icon-arrow-4" />
+                <p:draggable for="dragIcon" revert="true" helper="clone" appendTo="@(body)"/>
+            </p:column>
+
+            <p:column headerText="Id">
+                <p:outputLabel value="#{articleTableData.objectId}" />
+            </p:column>
+
+            <p:column headerText="Title">
+                <p:outputLabel value="#{articleTableData.title}" />
+            </p:column>
+
+            <p:column headerText="HomePage">
+                <p:outputLabel value="#{articleTableData.homePage}" />
+            </p:column>
+
+            <p:column headerText="PublishTime">
+                <p:outputLabel value="#{articleTableData.published}">
+                    <f:convertDateTime type="date" pattern="dd-MM-yyyy HH:mm:ss"/>
+                </p:outputLabel>
+            </p:column>
+
+            <p:column headerText="StartTime">
+                <p:outputLabel value="#{articleTableData.startTime}" >
+                    <f:convertDateTime type="date" pattern="dd-MM-yyyy HH:mm:ss"/>
+                </p:outputLabel>
+            </p:column>
+
+            <p:column headerText="Type">
+                <p:outputLabel value="#{articleTableData.contentType}" />
+            </p:column>
+
+            <p:column headerText="State">
+                <p:outputLabel value="#{articleTableData.state}" />
+            </p:column>
+
+            <!--
+            <p:column style="width:32px;text-align: center">
+                <p:commandButton update=":resultsForm:articleViewPanel" oncomplete="PF('articleViewDlg').show()"
+                    icon="ui-icon-search" title="View">
+                    <f:setPropertyActionListener value="#{articleTableData}" target="#{lazyViewBacking.selectedArticle}" />
+                </p:commandButton>
+            </p:column>
+            -->
+
+        </p:dataTable>
+    </h:panelGroup>
+
+</h:form>
+
+</html>

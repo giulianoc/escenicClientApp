@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/simple.xhtml">
+
+    <ui:define name="north">
+        <ui:include src="/WEB-INF/templates/common/escenicHeader.xhtml"/>
+    </ui:define>
+
+    <ui:define name="center">
+        <p:growl showDetail="true" escape="false" autoUpdate="true" life="5000" />
+
+        <p:dialog header="Group" appendTo="@(body)" widgetVar="newGroupDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="newGroupDialogForm">
+                <p:outputLabel value="New group name: " />
+                <p:inputText value="#{configureBacking.newGroupName}" required="true"/>
+
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('newGroupDialog').hide()" />
+
+                <p:commandButton value="New" action="#{configureBacking.newGroupName}"
+                    onclick="PF('newGroupDialog').hide()"
+                    update=":configureForm:groupNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <p:dialog header="Delete group" appendTo="@(body)" widgetVar="deleteGroupDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="deleteGroupDialogForm">
+                <p:outputLabel value="Are you sure to remove the selected group name?" />
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('deleteGroupDialog').hide()" />
+
+                <p:commandButton value="Delete" action="#{configureBacking.deleteGroupName}"
+                    onclick="PF('deleteGroupDialog').hide()"
+                    update=":configureForm:groupNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <p:dialog header="User" appendTo="@(body)" widgetVar="addUserNameDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="addUserNameDialogForm">
+                <p:outputLabel value="User name to be added: " />
+                <p:inputText value="#{configureBacking.userNameToBeAddedOrRemoved}" required="true"/>
+
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('addUserNameDialog').hide()" />
+
+                <p:commandButton value="Add" action="#{configureBacking.addUserNameToGroup}"
+                    onclick="PF('addUserNameDialog').hide()"
+                    update=":configureForm:userNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <p:dialog header="User" appendTo="@(body)" widgetVar="removeUserNameDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="removeUserNameDialogForm">
+                <p:outputLabel value="User name to be removed: " />
+                <p:inputText value="#{configureBacking.userNameToBeAddedOrRemoved}" required="true"/>
+
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('removeUserNameDialog').hide()" />
+
+                <p:commandButton value="Delete" action="#{configureBacking.removeUserNameFromGroup}"
+                    onclick="PF('removeUserNameDialog').hide()"
+                    update=":configureForm:userNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <p:dialog header="Section" appendTo="@(body)" widgetVar="addSectionUniqueNameDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="addSectionUniqueNameDialogForm">
+                <p:outputLabel value="Section Unique Name: " />
+                <p:inputText value="#{configureBacking.sectionUniqueName}" required="true"/>
+
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('addSectionUniqueNameDialog').hide()" />
+
+                <p:commandButton value="Add" action="#{configureBacking.addSectionUniqueName}"
+                                 onclick="PF('addSectionUniqueNameDialog').hide()"
+                                 update=":configureForm:sectionsUniqueNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <p:dialog header="Delete section" appendTo="@(body)" widgetVar="deleteSectionUniqueNameDialog" modal="true"
+                  showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+            <h:form id="deleteSectionUniqueNameDialogForm">
+                <p:outputLabel value="Are you sure to remove the selected Section?" />
+                <br />
+                <br />
+
+                <p:commandButton value="Cancel" onclick="PF('deleteSectionUniqueNameDialog').hide()" />
+
+                <p:commandButton value="Delete" action="#{configureBacking.deleteSectionUniqueName}"
+                                 onclick="PF('deleteSectionUniqueNameDialog').hide()"
+                                 update=":configureForm:sectionsUniqueNames"/>
+            </h:form>
+
+        </p:dialog>
+
+        <h:form id="configureForm">
+
+            <p:wizard widgetVar="configure" flowListener="#{configureBacking.onFlowProcess}">
+
+                <p:tab id="groupConfigure" title="Groups">
+                    <p:panel header="Groups configuration">
+                        <p:messages />
+
+                        <p:outputLabel for="groupNames" value="Group name:" style="font-weight: bold" />
+                        <p:selectOneMenu id="groupNames" required="true" value="#{configureBacking.selectedGroupName}" >
+                            <f:selectItem itemLabel="Select a group name" itemValue="" />
+                            <f:selectItems value="#{configureBacking.groupNames}" />
+                        </p:selectOneMenu>
+
+                        <br />
+                        <br />
+
+                        <p:commandButton value="New Group" onclick="PF('newGroupDialog').show()" />
+                        <p:commandButton value="Delete Group" onclick="PF('deleteGroupDialog').show()" />
+
+                        <br />
+                        <br />
+
+                        <p:outputLabel value="Skip to last: " />
+                        <p:selectBooleanCheckbox value="#{configureBacking.skip}" />
+
+                        <br />
+                        <br />
+
+                        <p:outputLabel value="Clicking 'Next' the information regarding the Group will be read from the repository (if present)" />
+
+                    </p:panel>
+                </p:tab>
+
+                <p:tab id="usersConfigure" title="Users">
+                    <p:panel header="Users configuration">
+                        <p:messages />
+
+                        <p:dataList id="userNames"
+
+                            value="#{configureBacking.configuration.groupUsers}"
+                            var="user"
+                            type="ordered">
+
+                            <f:facet name="header">
+                                Users of the '#{configureBacking.selectedGroupName}' group
+                            </f:facet>
+                            #{user}
+
+                        </p:dataList>
+
+                        <br />
+                        <br />
+
+                        <p:commandButton value="Add User into the group" onclick="PF('addUserNameDialog').show()" />
+                        <p:commandButton value="Remove User from the group" onclick="PF('removeUserNameDialog').show()" />
+
+                        <br />
+                        <br />
+
+                        <p:outputLabel value="Skip to last: " />
+                        <p:selectBooleanCheckbox value="#{configureBacking.skip}" />
+
+                    </p:panel>
+                </p:tab>
+
+                <p:tab id="rightsConfigure" title="Rights">
+                    <p:panel header="Rights configuration">
+                        <p:messages />
+
+                        <p:outputLabel value="Read only (Creation and Saving of Contents): " />
+                        <p:selectBooleanCheckbox value="#{configureBacking.configuration.readOnly}" />
+
+                        <br />
+                        <br />
+                        <p:outputLabel
+                            value="Sections (Unique Name) where it is allowed to create/save contents (used only if 'Read only' flag is NOT checked)"
+                            style="font-weight: bold"
+                        />
+                        <br />
+                        <br />
+
+                        <p:dataList
+                            id="sectionsUniqueNames"
+                            value="#{configureBacking.configuration.sectionsUniqueNames}"
+                            var="sectionUniqueName"
+                            type="ordered">
+
+                            <f:facet name="header">
+                                Section Unique Name
+                            </f:facet>
+
+                            #{sectionUniqueName}
+
+                        </p:dataList>
+
+                        <br />
+                        <br />
+
+                        <p:commandButton value="Add Section Unique Name" onclick="PF('addSectionUniqueNameDialog').show()" />
+                        <p:commandButton value="Delete Section Unique Name" onclick="PF('deleteSectionUniqueNameDialog').show()" />
+
+                        <br />
+                        <br />
+
+                        <p:outputLabel value="Skip to last: " />
+                        <p:selectBooleanCheckbox value="#{configureBacking.skip}" />
+
+                    </p:panel>
+                </p:tab>
+
+                <p:tab id="contentTypeConfigure" title="Content Type">
+                    <p:panel header="Content Type configuration (used when an article is created)">
+
+                        <p:messages />
+
+                        <!--
+                        <p:selectCheckboxMenu id="contentTypes" value="#{configureBacking.configuration.selectedContentTypes}"
+                            label="Content Types"
+                            required="true"
+                            filter="true" filterMatchMode="contains">
+                            <f:converter converterId="contentTypeConverter" />
+                            <f:selectItems value="#{configureBacking.contentTypesToBeSelected}"
+                                var="contentType" itemLabel="#{contentType.label}" itemValue="#{contentType}" />
+                        </p:selectCheckboxMenu>
+                        -->
+
+                        <p:selectManyCheckbox
+                            id="contentTypes"
+                            value="#{configureBacking.configuration.selectedContentTypes}"
+                            layout="grid"
+                            columns="6"
+                            required="true">
+                            <f:converter converterId="contentTypeConverter" />
+                            <f:selectItems value="#{configureBacking.contentTypesToBeSelected}"
+                                           var="contentType" itemLabel="#{contentType.label}" itemValue="#{contentType}" />
+                        </p:selectManyCheckbox>
+
+                        <br />
+                        <br />
+
+                        <p:outputLabel value="Skip to last: " />
+                        <p:selectBooleanCheckbox value="#{configureBacking.skip}" />
+
+                    </p:panel>
+                </p:tab>
+
+                <p:tab id="fieldsConfigurations" title="Metadata">
+
+                    <p:panel id="fieldsConfigurationsPanel" header="Fields Configurations">
+
+                        <!--
+                        <p:selectOneMenu id="selectedContentType" value="#{configureBacking.selectedContentType}"
+                            converter="contentTypeConverter" >
+                            <f:selectItems value="#{configureBacking.configuration.selectedContentTypes}"
+                                var="contentType" itemLabel="#{contentType.label}" itemValue="#{contentType}"/>
+                            <p:ajax
+                                event="change"
+                                update="fieldsConfigurationDataTable addNewField"
+                                listener="#{configureBacking.contentTypeChangeListener}"
+                                global="false" />
+                        </p:selectOneMenu>
+
+                        <br />
+                        -->
+                        <ui:repeat var="selectedContentType" value="#{configureBacking.configuration.selectedContentTypes}" varStatus="status">
+
+                            <p:dataTable
+                                id="fieldsConfigurationDataTable"
+                                var="fieldConfiguration"
+                                editable="true"
+                                editMode="cell"
+                                value="#{configureBacking.configuration.fieldsConfigurations[selectedContentType.type]}"
+                                rowIndexVar="rowId" >
+
+                                <f:facet name="header">
+                                    #{selectedContentType.label}
+                                </f:facet>
+
+                                <p:column headerText="field">
+                                    <p:cellEditor>
+                                        <f:facet name="output"><p:outputLabel value="#{fieldConfiguration.keyField}" /></f:facet>
+                                        <f:facet name="input">
+                                            <p:selectOneMenu id="keyField" value="#{fieldConfiguration.keyField}" >
+                                                <f:selectItems value="#{configureBacking.getKeyFields(selectedContentType)}" />
+                                                <p:ajax
+                                                    event="change"
+                                                    listener="#{configureBacking.keyFieldChanged(selectedContentType, rowId)}"
+                                                    update="fieldsConfigurationDataTable"
+                                                    global="false" />
+                                            </p:selectOneMenu>
+                                        </f:facet>
+                                    </p:cellEditor>
+                                </p:column>
+
+                                <p:column headerText="GroupLabel">
+                                    <p:outputLabel id="groupLabel" value="#{fieldConfiguration.groupLabel}" />
+                                </p:column>
+
+                                <p:column headerText="Label">
+                                    <p:cellEditor>
+                                        <f:facet name="output"><p:outputLabel value="#{fieldConfiguration.label}" /></f:facet>
+                                        <f:facet name="input">
+                                            <p:inputText id="label" value="#{fieldConfiguration.label}" />
+                                        </f:facet>
+                                    </p:cellEditor>
+                                </p:column>
+
+                                <p:column headerText="Mandatory">
+                                    <p:cellEditor>
+                                        <f:facet name="output"><p:outputLabel value="#{fieldConfiguration.mandatory}" /></f:facet>
+                                        <f:facet name="input">
+                                            <p:selectBooleanButton
+                                                id="mandatory"
+                                                value="#{fieldConfiguration.mandatory}"
+                                                onLabel="Yes" offLabel="No" onIcon="ui-icon-check" offIcon="ui-icon-close" />
+                                        </f:facet>
+                                    </p:cellEditor>
+                                </p:column>
+
+                            </p:dataTable>
+
+                            <p:commandButton
+                                id="addNewField"
+                                value="Add new field"
+                                actionListener="#{configureBacking.addEmptyNewConfigurationField(selectedContentType)}"
+                                update="fieldsConfigurationDataTable" />
+
+                            <br />
+                            <br />
+
+                        </ui:repeat>
+
+                        <p:commandButton value="Cancel" action="/protected/pages/escenicBrowser.xhtml?faces-redirect=true" process="@this"/>
+
+                        <p:commandButton value="Save" actionListener="#{configureBacking.save}"
+                            action="/protected/pages/escenicBrowser.xhtml?faces-redirect=true"
+                            process="@this"/>
+
+                    </p:panel>
+
+                </p:tab>
+
+            </p:wizard>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
+
+</html>

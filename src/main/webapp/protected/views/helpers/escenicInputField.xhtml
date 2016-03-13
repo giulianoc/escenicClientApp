@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:myCkEditor="http://xmlns.jcp.org/jsf/composite/myCkEditor"
+        >
+
+
+    <p:outputLabel
+        value="&lt;hidden&gt;"
+        rendered="#{!fields[keyField].escenicType.visibility}" />
+
+
+    <p:inputText
+        id="string"
+        disabled="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_STRINGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].escenicType.alternativesList == null
+            and keyField != 'body'
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].stringValue}"
+        style="width: 100%">
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax event="click"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:inputText>
+    <p:message for="string" />
+    <p:tooltip for="string" value="#{fields[keyField].fieldName}"
+        showEffect="clip" hideEffect="explode" />
+
+    <p:selectOneMenu id="string_dropdown"
+        disabled="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_STRINGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].escenicType.alternativesList != null
+            and keyField != 'body'
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].stringValue}" >
+        <f:selectItem itemLabel="Select a field" itemValue="" noSelectionOption="true" />
+        <f:selectItems value="#{fields[keyField].escenicType.alternativesList}" style="width: 100%" />
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax
+            event="change"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:selectOneMenu>
+    <p:message for="string_dropdown" />
+    <p:tooltip for="string_dropdown" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+    <myCkEditor:MyCkEditor
+        id="string_body"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_STRINGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].escenicType.alternativesList == null
+            and keyField == 'body'
+            and !fields[keyField].readOnly}"
+        readonly="#{tab.article.metadataFields[metadataKeyField].externalLock != null
+            and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        value="#{fields[keyField]}"
+
+        changeEventListener="#{tab.article.ckEditorChangeEventListener}"
+        disableChangeEventCondition="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+        updateChangeEventCondition=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+    />
+    <!--
+    <pe:ckEditor
+        id="string_body"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_STRINGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].escenicType.alternativesList == null
+            and keyField == 'body'
+            and !fields[keyField].readOnly}"
+        readonly="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        value="#{fields[keyField].stringValue}"
+        customConfig="#{request.contextPath}/resources/js/ckEditor.js"
+        style="width: 100%">
+        <!- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        ->
+        <p:ajax
+            event="save"
+            listener="#{tab.article.saveBody(fields[keyField].stringValue)}"
+            global="false" />
+        <p:ajax
+            event="dirty"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </pe:ckEditor>
+    -->
+    <p:message for="string_body" />
+    <p:tooltip for="string_body" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+    <p:outputLabel
+        id="string_label"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_STRINGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].readOnly}"
+        value="#{fields[keyField].stringValue}"
+        style="width: 100%" />
+    <p:tooltip for="string_label" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+
+    <p:selectBooleanButton
+        id="boolean"
+        disabled="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_BOOLEANVALUE'
+            and fields[keyField].escenicType.visibility
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].booleanValue}"
+        onLabel="Yes" offLabel="No" onIcon="ui-icon-check" offIcon="ui-icon-close">
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax
+            event="change"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:selectBooleanButton>
+    <p:message for="boolean" />
+    <p:tooltip for="boolean" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+    <p:outputLabel
+            id="boolean_label"
+            rendered="#{fields[keyField].valueType == 'ESCENIC_BOOLEANVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].readOnly}"
+            value="#{fields[keyField].booleanValue}"
+            style="width: 100%" />
+    <p:tooltip for="boolean_label" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+
+    <p:inputText
+        id="longValue"
+        disabled="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_LONGVALUE'
+            and fields[keyField].escenicType.visibility
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].longValue}"
+        style="width: 100%">
+        <f:validateDoubleRange minimum="0" maximum="999999999" />
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax
+            event="click"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:inputText>
+    <p:message for="longValue" />
+    <p:tooltip for="longValue" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+    <p:outputLabel
+        id="longValue_label"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_LONGVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].readOnly}"
+        value="#{fields[keyField].longValue}"
+        style="width: 100%" />
+    <p:tooltip for="longValue_label" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+
+    <p:inputText
+        id="decimalValue"
+        disabled="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_DECIMALVALUE' and
+            fields[keyField].escenicType.visibility
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].decimalValue}"
+        style="width: 100%">
+        <f:validateDoubleRange minimum="0.0" maximum="10.5" />
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax
+            event="click"
+            disabled="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:inputText>
+    <p:message for="decimalValue" />
+    <p:tooltip for="decimalValue" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+    <p:outputLabel
+        id="decimalValue_label"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_DECIMALVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].readOnly}"
+        value="#{fields[keyField].decimalValue}"
+        style="width: 100%" />
+    <p:tooltip for="decimalValue_label" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+
+    <p:calendar
+        id="dateValue"
+        disabled="#{fields[keyField].externalLock != null and fields[keyField].myPrivateLockURL == null}"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_DATEVALUE'
+            and fields[keyField].escenicType.visibility
+            and !fields[keyField].readOnly}"
+        value="#{fields[keyField].dateValue}"
+        pattern="dd-MM-yyyy  HH:mm:ss">
+        <!-- update -> extendedMetadataDataTable: complete path for it otherwise it will raise an error
+            if the field is within a complexValue since it will not find extendedMetadataDataTable
+        -->
+        <p:ajax
+            event="dateSelect"
+            disabled="#{fields[keyField].myPrivateLockURL != null}"
+            listener="#{tab.article.valueChangeListener(fields[keyField], initialEscenicFieldOfAComplex)}"
+            update=":escenicTabViewForm:escenicArticlesTabView:#{articleViewToBeUpdated}:extendedMetadataDataTable"
+            global="false" />
+    </p:calendar>
+    <p:message for="dateValue" />
+    <p:tooltip for="dateValue" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+    <p:outputLabel
+        id="dateValue_label"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_DATEVALUE'
+            and fields[keyField].escenicType.visibility
+            and fields[keyField].readOnly}"
+        value="#{fields[keyField].dateValue}"
+        style="width: 100%">
+        <f:convertDateTime type="date" pattern="dd-MM-yyyy HH:mm:ss"/>
+    </p:outputLabel>
+    <p:tooltip for="dateValue_label" value="#{fields[keyField].fieldName}"
+               showEffect="clip" hideEffect="explode" />
+
+
+    <p:dataTable id="complexValue" widgetVar="complexValueTable" rowIndexVar="rowId"
+        rendered="#{fields[keyField].valueType == 'ESCENIC_LISTCOMPLEXVALUE'
+            and fields[keyField].escenicType.visibility}"
+        value="#{fields[keyField].listComplexValue}" var="complexValue">
+
+        <p:columns value="#{fields[keyField].listComplexColumns}" var="column" columnIndexVar="colIndex">
+
+            <f:facet name="header">
+                <p:outputLabel value="#{column.header}" />
+            </f:facet>
+
+            <!-- nestedLevel is used to avoid an infinite loop calling the include recursively -->
+
+            <c:if test="${nestedLevel lt 3}">
+                <ui:include src="escenicInputField.xhtml">
+                    <ui:param name="tableIndex" value="#{tableIndex}" />
+                    <ui:param name="setName" value="#{setName}" />
+                    <ui:param name="initialEscenicFieldOfAComplex" value="#{complexValue.initialEscenicField}" />
+                    <ui:param name="keyField" value="#{column.property}" />
+                    <ui:param name="fields" value="#{complexValue.metadataFields}" />
+                    <ui:param name="nestedLevel" value="#{nestedLevel + 1}" />
+                    <ui:param name="articleViewToBeUpdated" value="#{articleViewToBeUpdated}" />
+                </ui:include>
+            </c:if>
+
+        </p:columns>
+
+        <p:column rendered="!fields[keyField].readOnly">
+            <p:commandLink value="Remove" action="#{tab.article.removeComplexFieldRow(fields[keyField], rowId)}"
+                update="complexValue" />
+        </p:column>
+
+    </p:dataTable>
+    <p:commandButton
+        rendered="#{fields[keyField].valueType == 'ESCENIC_LISTCOMPLEXVALUE'
+            and fields[keyField].escenicType.visibility
+            and !fields[keyField].readOnly}"
+        value="Add"
+        actionListener="#{tab.article.addEmptyComplexFieldRow(fields[keyField])}"
+        update="complexValue" />
+
+
+</html>

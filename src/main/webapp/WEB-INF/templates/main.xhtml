@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+
+    <ui:insert name="metadata"/>
+
+    <h:head>
+        <title><ui:insert name="title">#{bundle['head.title']}</ui:insert></title>
+
+        <!--
+        <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="EmulateIE8" />
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+        </f:facet>
+        -->
+
+        <!--
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/default.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/syntaxhighlighter/syntaxhighlighter.css" />
+        -->
+
+        <!--
+        <link href="#{request.contextPath}/resources/css/rsiapp.css" type="text/css" rel="stylesheet"></link>
+        -->
+
+        <script type="text/javascript" src="#{request.contextPath}/resources/ckeditor2_4.5.6/ckeditor.js"></script>
+
+        <h:outputStylesheet library="css" name="rsiapp.css"  />
+    </h:head>
+
+    <h:body>
+
+        <p:layout fullPage="true">
+
+            <p:layoutUnit position="north">
+                <ui:insert name="north" />
+            </p:layoutUnit>
+
+            <p:layoutUnit position="west" size="150" resizable="true" collapsible="true" header="Escenic sections">
+                <ui:insert name="west" />
+            </p:layoutUnit>
+
+            <p:layoutUnit position="center">
+
+                <p:layout>
+
+                    <p:layoutUnit position="north" resizable="true" size="40%" collapsible="true"
+                        header="Search result" styleClass="nestedUnit">
+
+                        <ui:insert name="center-north" />
+
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="center" resizable="true" size="20" collapsible="false"
+                        header="Articles" styleClass="nestedUnit">
+
+                        <ui:insert name="center-center" />
+
+                    </p:layoutUnit>
+
+                    <!--
+                    <p:layoutUnit position="south" resizable="true" size="40%" collapsible="true"
+                        collapsed="false" header="RSI CMS Chat">
+                        <ui:insert name="center-south" />
+                    </p:layoutUnit>
+                    -->
+
+                </p:layout>
+
+            </p:layoutUnit>
+
+            <p:layoutUnit position="east" size="300" resizable="true" collapsible="true" header="Search">
+                <ui:insert name="east" />
+            </p:layoutUnit>
+
+        </p:layout>
+
+    </h:body>
+
+</f:view>
+
+</html>

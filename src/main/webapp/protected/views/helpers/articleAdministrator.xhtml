@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:media="http://xmlns.jcp.org/jsf/composite/media">
+
+    <p:tabView id="articleAdministratorView" dynamic="true" cache="false" scrollable="true"
+        onTabShow="initDND()">
+
+        <p:tab title="Metadata">
+
+            <!-- begin: next two tags are used to manage the push -->
+            <h:panelGroup styleClass="hiddenArticleId">
+                <p:outputLabel style="display: none" value="#{tab.article.metadataFields['com.escenic.displayId'].stringValue}" />
+            </h:panelGroup>
+            <p:commandButton style="display: none"
+                styleClass="locksToBeUpdated" global="false"
+                update="extendedMetadataDataTable :escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:sectionsFieldSet :escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:relatedLinks" />
+            <!-- end -->
+
+            <p:outputLabel for="groups" value="Groups:  " style="font-weight: bold" />
+            <p:selectOneMenu id="groups" value="#{tab.article.selectedEscenicTypeGroupLabel}" >
+                <f:selectItems value="#{tab.article.escenicTypeGroupLabels}" />
+                <p:ajax event="change" update="extendedMetadataDataTable" global="false" />
+            </p:selectOneMenu>
+
+            <br />
+
+            <p:dataTable id="extendedMetadataDataTable" var="metadataKeyField"
+                value="#{tab.article.getMetadataFieldsKeys(tab.article.selectedEscenicTypeGroupLabel)}" >
+
+                <p:column style="width: 10%">
+
+                    <p:outputLabel
+                            value="#{tab.article.metadataFields[metadataKeyField].escenicType.label}   "
+                            style="font-weight: bold" />
+
+                    <p:graphicImage width="24" height="24"
+                                    id="lockIcon"
+                                    rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null}"
+                                    name="img/locked.jpg" />
+                    <p:tooltip
+                        for="lockIcon"
+                        rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null}"
+                        value="Locked by myself"
+                        showEffect="clip" hideEffect="explode" />
+                    <p:tooltip
+                            for="lockIcon"
+                            rendered="#{tab.article.metadataFields[metadataKeyField].externalLock != null and tab.article.metadataFields[metadataKeyField].myPrivateLockURL == null}"
+                            value="#{tab.article.metadataFields[metadataKeyField].externalLock.content}"
+                            showEffect="clip" hideEffect="explode" />
+                    <p:contextMenu for="lockIcon">
+                        <p:menuitem value="Send a message to '#{tab.article.metadataFields[metadataKeyField].externalLock.userName}' to unlock" icon="ui-icon-mail-closed"
+                                    update=":chatForm"
+                                    action="#{chatBacking.sendMessageToUnlock(tab.article.metadataFields[metadataKeyField].externalLock.userName, tab.article.metadataFields['com.escenic.displayId'].stringValue, tab.article.metadataFields[metadataKeyField].fieldName)}"/>
+                        <p:menuitem value="Steal lock" icon="ui-icon-locked"
+                            update="extendedMetadataDataTable"
+                            action="#{tab.article.stealLock(tab.article.metadataFields[metadataKeyField])}"/>
+                    </p:contextMenu>
+
+                    <p:graphicImage width="24" height="24"
+                                    id="pencilIcon"
+                                    rendered="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null or tab.article.metadataFields[metadataKeyField].changeType != 'ESCENIC_NOCHANGE'}"
+                                    name="img/pencil.jpg" />
+                    <!--
+                    <p:commandButton id="pencilIcon"
+                        rendered="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null or tab.article.metadataFields[metadataKeyField].changeType != 'ESCENIC_NOCHANGE'}"
+                        icon="ui-icon-pencil" />
+                    -->
+                    <p:tooltip for="pencilIcon" value="#{tab.article.metadataFields[metadataKeyField].myPrivateLockURL != null ? 'locked by myself' : 'modified but no lock set'}"
+                               showEffect="clip" hideEffect="explode" />
+
+                    <!--
+                    <p:contextMenu for="logo" my="right top" at="left top">
+                        <p:menuitem value="test" icon="ui-icon-alert" action="#{bean.action}" />
+                    </p:contextMenu>
+                    -->
+                </p:column>
+
+                <p:column>
+
+                    <ui:include src="escenicInputField.xhtml">
+                        <ui:param name="setName" value="metadataFields" />
+                        <ui:param name="initialEscenicFieldOfAComplex" value="" />
+                        <ui:param name="keyField" value="#{metadataKeyField}" />
+                        <ui:param name="fields" value="#{tab.article.metadataFields}" />
+                        <ui:param name="nestedLevel" value="0" />
+                        <ui:param name="articleViewToBeUpdated" value="articleAdministratorView" />
+                    </ui:include>
+
+                </p:column>
+
+            </p:dataTable>
+
+        </p:tab>
+
+        <p:tab title="Sections">
+            <p:fieldset id="sectionsFieldSet" styleClass="droppoint" legend="Sections" style="margin-top:20px">
+
+                <p:graphicImage width="24" height="24"
+                                id="sectionsLockIcon"
+                                rendered="#{tab.article.sectionsExternalLock != null}"
+                                name="img/locked.jpg" />
+                <p:tooltip
+                        for="sectionsLockIcon"
+                        rendered="#{tab.article.sectionsExternalLock != null and tab.article.myPrivateSectionsLockURL != null}"
+                        value="Locked by myself"
+                        showEffect="clip" hideEffect="explode" />
+                <p:tooltip
+                        for="sectionsLockIcon"
+                        rendered="#{tab.article.sectionsExternalLock != null and tab.article.myPrivateSectionsLockURL == null}"
+                        value="#{tab.article.sectionsExternalLock.content}"
+                        showEffect="clip" hideEffect="explode" />
+                <p:contextMenu for="sectionsLockIcon">
+                    <p:menuitem value="Send a message to '#{tab.article.sectionsExternalLock.userName}' to unlock" icon="ui-icon-mail-closed"
+                                update=":chatForm"
+                                action="#{chatBacking.sendMessageToUnlock(tab.article.sectionsExternalLock.userName, tab.article.metadataFields['com.escenic.displayId'].stringValue, 'section')}"/>
+                    <p:menuitem value="Steal lock" icon="ui-icon-locked"
+                                update="sectionsFieldSet"
+                                action="#{tab.article.stealSectionsLock()}"/>
+                </p:contextMenu>
+
+                <p:graphicImage width="24" height="24"
+                                id="sectionsPencilIcon"
+                                rendered="#{tab.article.myPrivateSectionsLockURL != null}"
+                                name="img/pencil.jpg" />
+                <p:tooltip for="sectionsPencilIcon" value="locked by myself"
+                           showEffect="clip" hideEffect="explode" />
+
+                <p:dataTable id="sectionsTable" var="section" value="#{tab.article.sections}" >
+
+                    <p:column headerText="Id">
+                        <p:outputLabel value="#{section.id} (#{section.uniqueName})" />
+                    </p:column>
+
+                    <p:column headerText="Name">
+                        <p:outputLabel value="#{section.name}" />
+                    </p:column>
+
+                    <p:column headerText="Summary">
+                        <p:outputLabel value="#{section.summary}" />
+                    </p:column>
+
+                    <p:column>
+                        <p:outputLabel rendered="#{section.homeSection == true}" value="home section" style="font-weight: bold"/>
+
+                        <p:commandLink rendered="#{section.homeSection == false}" value="Remove" action="#{tab.article.removeSection(section.id)}"
+                                       update=":escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:sectionsFieldSet" />
+                        <br />
+                        <br />
+                        <p:commandLink rendered="#{section.homeSection == false}" value="Set as home section" action="#{tab.article.setAsHomeSection(section.id)}"
+                                       update=":escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:sectionsFieldSet" />
+                    </p:column>
+
+                </p:dataTable>
+            </p:fieldset>
+
+            <br />
+            <p:outputLabel value="&lt;drag a Section here to add it to the Content&gt;" />
+            <!--
+            <p:commandButton id="addSelectedSectionButton"
+                 value="Add selected Section"
+                 actionListener="#{tab.article.addSelectedSection}"
+                 update=":escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:sectionsFieldSet" />
+            -->
+
+            <p:remoteCommand name="sectionTreeDropOnSectionsTable" actionListener="#{tab.article.sectionTreeDropOnSectionsTable}"
+                             update=":escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:sectionsFieldSet"
+                             oncomplete="initDND()"/>
+            <!--
+            <p:droppable for="sectionsFieldSet" tolerance="touch" activeStyleClass="ui-state-highlight"
+                          datasource=":eceSectionsForm:eceSections">
+
+                <p:ajax listener="#{tab.article.sectionDropOnSections}" update="sectionsTable" />
+            </p:droppable>
+            -->
+
+        </p:tab>
+
+        <p:tab id="relatedLinksTab" title="Related links">
+
+            <p:outputLabel for="relatedLinksMenu" value="Related links:  " style="font-weight: bold" />
+            <p:selectOneMenu id="relatedLinksMenu" value="#{tab.article.selectedRelatedLinkKey}" >
+                <f:selectItems value="#{tab.article.relatedLinksKeys}" />
+                <p:ajax event="change" update="relatedLinks" global="false" />
+            </p:selectOneMenu>
+
+            <br />
+
+            <p:fieldset id="relatedLinks"
+                rendered="#{tab.article.selectedRelatedLinkKey != null and tab.article.selectedRelatedLinkKey.length() >= 8}"
+                legend="#{tab.article.selectedRelatedLinkKey.substring(8)}"
+                style="margin-top:20px">
+
+                <p:graphicImage width="24" height="24"
+                                id="lockIcon"
+                                rendered="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey] != null and tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock != null}"
+                                name="img/locked.jpg" />
+                <p:tooltip
+                        for="lockIcon"
+                        rendered="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock != null and tab.article.linksFields[tab.article.selectedRelatedLinkKey].myPrivateLockURL != null}"
+                        value="Locked by myself"
+                        showEffect="clip" hideEffect="explode" />
+                <p:tooltip
+                        for="lockIcon"
+                        rendered="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock != null and tab.article.linksFields[tab.article.selectedRelatedLinkKey].myPrivateLockURL == null}"
+                        value="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock.content}"
+                        showEffect="clip" hideEffect="explode" />
+                <p:contextMenu for="lockIcon">
+                    <p:menuitem value="Send a message to '#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock.userName}' to unlock" icon="ui-icon-mail-closed"
+                                update=":chatForm"
+                                action="#{chatBacking.sendMessageToUnlock(tab.article.linksFields[tab.article.selectedRelatedLinkKey].externalLock.userName, tab.article.metadataFields['com.escenic.displayId'].stringValue, tab.article.selectedRelatedLinkKey.substring(8))}"/>
+                    <p:menuitem value="Steal lock" icon="ui-icon-locked"
+                                update="relatedLinks"
+                                action="#{tab.article.stealLock(tab.article.linksFields[tab.article.selectedRelatedLinkKey])}"/>
+                </p:contextMenu>
+
+                <p:graphicImage width="24" height="24"
+                                id="pencilIcon"
+                                rendered="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey] != null and (tab.article.linksFields[tab.article.selectedRelatedLinkKey].myPrivateLockURL != null or tab.article.linksFields[tab.article.selectedRelatedLinkKey].changeType != 'ESCENIC_NOCHANGE')}"
+                                name="img/pencil.jpg" />
+                <p:tooltip for="pencilIcon" value="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].myPrivateLockURL != null ? 'locked by myself' : 'modified but no lock set'}"
+                           showEffect="clip" hideEffect="explode" />
+
+                <p:dataTable id="relatedLinkTable" var="escenicLink" rowIndexVar="rowId"
+                    value="#{tab.article.linksFields[tab.article.selectedRelatedLinkKey].listLinkValues}">
+
+                    <p:column headerText="id">
+                        <p:commandLink
+                            value="#{escenicLink.id}"
+                            action="#{articlesTabsBacking.addTab(escenicLink.id)}"
+                            update=":escenicTabViewForm:escenicArticlesTabView"/>
+                    </p:column>
+
+                    <p:column headerText="title">
+                        <p:outputLabel value="#{escenicLink.title}" />
+                    </p:column>
+
+                    <p:column headerText="state">
+                        <p:outputLabel value="#{escenicLink.state}" />
+                    </p:column>
+
+                    <p:column>
+                        <p:graphicImage rendered="#{escenicLink.thumbnailImageInfo != null and escenicLink.thumbnailImageInfo.cachedPath != null}"
+                            name="#{escenicLink.thumbnailImageInfo.cachedPath}" />
+                    </p:column>
+
+                    <p:column>
+                        <p:commandLink value="Remove" action="#{tab.article.removeRelatedLink(tab.article.selectedRelatedLinkKey, rowId)}"
+                            update="relatedLinkTable" />
+                    </p:column>
+
+                </p:dataTable>
+                <br />
+                <p:outputLabel value="&lt;drag a Content here to add it to '#{tab.article.selectedRelatedLinkKey.substring(8)}'&gt;" />
+
+                <p:droppable for="relatedLinks" tolerance="touch" activeStyleClass="ui-state-highlight"
+                    datasource=":resultsForm:resultsDataTable" >
+
+                    <f:attribute name="linksKey" value="#{tab.article.selectedRelatedLinkKey}" />
+
+                    <p:ajax listener="#{tab.article.articleDropOnRelated}" update="relatedLinkTable" />
+                </p:droppable>
+
+            </p:fieldset>
+
+        </p:tab>
+
+        <p:tab title="Media">
+
+            <p:outputLabel rendered="#{tab.article.binaryLinkField == null and tab.article.mediaInfo == null}"
+                           value="No media available"
+                           style="font-weight: bold" />
+
+            <p:panel rendered="#{tab.article.mediaInfo != null}">
+
+                <p:outputLabel value="Media type: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.mediaType}" />
+                <br />
+                <p:outputLabel value="Id: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.id}" />
+                <br />
+                <p:outputLabel value="External reference: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.externalReference}" />
+                <br />
+                <p:outputLabel value="Group: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.group}" />
+                <br />
+                <p:outputLabel value="Status: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.status}" />
+                <br />
+                <p:outputLabel value="Message: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.message}" />
+                <br />
+                <p:outputLabel value="Duration: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.duration}" />
+                <br />
+                <p:outputLabel value="Transcoding state: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.transcodingState}" />
+                <br />
+                <p:outputLabel value="Progress: " style="font-weight: bold" />
+                <p:outputLabel value="#{tab.article.mediaInfo.progress}" />
+                <br />
+                <br />
+
+                <p:dataTable rendered="#{tab.article.mediaInfo.message == null}" var="mediaEntryInfo"
+                             value="#{tab.article.mediaInfo.mediaEntriesInfo}">
+                    <p:column headerText="mrid">
+                        <p:outputLabel value="#{mediaEntryInfo.mrid}" />
+                    </p:column>
+
+                    <p:column headerText="uri">
+                        <p:outputLabel value="#{mediaEntryInfo.uri}" />
+                    </p:column>
+
+                    <p:column headerText="mimeType">
+                        <p:outputLabel value="#{mediaEntryInfo.mimeType}" />
+                    </p:column>
+
+                    <p:column headerText="width">
+                        <p:outputLabel value="#{mediaEntryInfo.width}" />
+                    </p:column>
+
+                    <p:column headerText="height">
+                        <p:outputLabel value="#{mediaEntryInfo.height}" />
+                    </p:column>
+
+                    <p:column headerText="status">
+                        <p:outputLabel value="#{mediaEntryInfo.uri}" />
+                    </p:column>
+
+                    <p:column>
+                        <p:commandLink
+                            value="Change Player URL"
+                            action="#{tab.article.setDefaultMediaEntry(mediaEntryInfo)}"
+                            update=":escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:playerLabel :escenicTabViewForm:escenicArticlesTabView:articleAdministratorView:playerPanel" />
+                    </p:column>
+
+                </p:dataTable>
+
+                <br />
+
+                <p:outputLabel
+                        rendered="#{tab.article.mediaInfo.message == null}"
+                        value="HTML5 player URL: "
+                        style="font-weight: bold" />
+                <p:outputLabel
+                        id="playerLabel"
+                        rendered="#{tab.article.mediaInfo.message == null}"
+                        value="#{tab.article.defaultMediaEntry.uri}"
+                        style="font-weight: bold"/>
+                <br />
+                <br />
+                <p:panel
+                        id="playerPanel"
+                        rendered="#{tab.article.mediaInfo.message == null}" >
+
+                    <media:video
+                            id="player"
+                            value="#{tab.article.defaultMediaEntry.uri}"
+                            autoplay="false"
+                            controls="true" />
+                </p:panel>
+
+            </p:panel>
+
+
+            <br />
+            <p:outputLabel
+                rendered="#{tab.article.binaryLinkField != null}"
+                value="Binary (#{tab.article.binaryLinkField.href})"
+                style="font-weight: bold" />
+            <br />
+            <p:graphicImage
+                    rendered="#{tab.article.binaryLinkField != null
+                    and tab.article.binaryLinkField.thumbnailImageInfo != null
+                    and tab.article.binaryLinkField.thumbnailImageInfo.cachedPath != null}"
+                    name="#{tab.article.binaryLinkField.thumbnailImageInfo.cachedPath}" />
+
+            <p:panel
+                    id="binaryLinkPlayerPanel"
+                    rendered="#{tab.article.binaryLinkFieldVideoAudio}" >
+
+                <media:video
+                        id="binaryLinkPlayer"
+                        value="#{tab.article.binaryLinkField.href}"
+                        autoplay="false"
+                        controls="true" />
+            </p:panel>
+
+        </p:tab>
+
+        <p:tab title="History">
+            <p:dataTable var="historyLog" value="#{tab.article.historyLogs}">
+
+                <p:column headerText="Author">
+                    <p:outputLabel value="#{historyLog.author}" />
+                </p:column>
+
+                <p:column headerText="State">
+                    <p:outputLabel value="#{historyLog.state}" />
+                </p:column>
+
+                <p:column headerText="Updated">
+                    <p:outputLabel value="#{historyLog.updated}" >
+                        <f:convertDateTime pattern="dd-MM-yyyy HH:mm:ss" />
+                    </p:outputLabel>
+                </p:column>
+
+            </p:dataTable>
+        </p:tab>
+
+    </p:tabView>
+
+    <!--
+    <p:outputLabel rendered="tab.article.relatedLinksKeys.size == 0" value="No related links are present in the article" style="color: red; font-weight: bold" />
+    -->
+</html>

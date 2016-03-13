@@ -1,0 +1,119 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:rsiCMSClientAPP="http://xmlns.jcp.org/jsf/composite/rsiCMSClientAPP">
+    
+    <ui:composition>
+        <!--
+        <rsiCMSClientAPP:navbar label="#{bundle['navbar.label']}" value="#{request.contextPath}/protected/pages/articlesBrowser.xhtml?faces-redirect=true">
+            <rsiCMSClientAPP:navitem label="#{bundle['navbar.contactUs']}" value="#{request.contextPath}/public/pages/contactUs.xhtml?faces-redirect=true"/>
+            <rsiCMSClientAPP:navitem label="#{bundle['navbar.about']}" value="#{request.contextPath}/public/pages/about.xhtml?faces-redirect=true"/>
+        </rsiCMSClientAPP:navbar>
+
+	    -->
+
+        <!--
+        <h:panelGrid id="loginPanelGrid" width="99%" columns="5" style="height:30px;">
+            <h:form>
+                <p:outputLabel value="#{bundle['page.title']}"></p:outputLabel>
+                <p:commandButton value="#{bundle['navbar.skins']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                <p:commandButton value="#{bundle['navbar.contactUs']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                <p:commandButton value="#{bundle['navbar.about']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                <p:commandButton value="#{bundle['navbar.logout']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+            </h:form>
+        </h:panelGrid>
+        -->
+
+
+        <ui:include src="./chat.xhtml"/>
+
+        <ui:include src="/public/pages/releaseNote.xhtml"/>
+
+        <h:form>
+
+            <p:toolbar styleClass="escenicBrowserToolbar">
+                <p:toolbarGroup align="left">
+                    <p:outputLabel value="#{bundle['page.title']}" styleClass="escenicBrowserTitle"></p:outputLabel>
+                </p:toolbarGroup>
+
+                <p:toolbarGroup align="right">
+
+                    <!--
+                        onclick="PF('rsiConfigureDialog').show()"
+                    -->
+                    <p:commandLink
+                        action="/protected/pages/admin/configure.xhtml?faces-redirect=true"
+                        disabled="#{!sessionScope.escenicService.isAdministrator()}"
+                        value="Configure" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:commandLink disabled="false" onclick="PF('rsiChatDialog').show()" value="RSI Chat" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:themeSwitcher>
+                        <f:selectItems value="#{themeChoices.themes}"/>
+                    </p:themeSwitcher>
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:outputLabel value="#{sessionScope.escenicService.escenicWebServicesHost}" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:outputLabel
+                        id="userHeader" value="#{sessionScope.escenicService.userName} (#{sessionScope.escenicService.isAdministrator() ? '' : 'no '} administrator)" />
+                    <p:tooltip
+                        for="userHeader"
+                        value="'no administrator' means you have limited rights on fields and activities. Contact the administrator to have changed your configuration."
+                        rendered="#{!sessionScope.escenicService.isAdministrator()}"
+                        showEffect="clip"
+                        hideEffect="explode" />
+                    <p:tooltip
+                        for="userHeader"
+                        value="'administrator' means rights without any limit on fields and activities."
+                        rendered="#{sessionScope.escenicService.isAdministrator()}"
+                        showEffect="clip"
+                        hideEffect="explode" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:commandLink onclick="PF('releaseNoteDialog').show()" value="v. #{sessionScope.escenicService.version}.#{sessionScope.escenicService.buildNumber}" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:commandLink action="#{loginBacking.logout}" value="Logout" />
+
+                    <!--
+                    <p:commandButton value="#{bundle['navbar.contactUs']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                    <p:commandButton value="#{bundle['navbar.about']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                    <p:commandButton value="#{bundle['navbar.logout']}" onclick="composeDlg.show()" type="button" icon="ui-icon ui-icon-document"/>
+                    -->
+                </p:toolbarGroup>
+
+            </p:toolbar>
+
+        </h:form>
+
+        <ui:include src="./globalAjaxProgressBarDialog.xhtml"/>
+
+        <h:outputScript library="js" name="rsiapp.js" target="head" />
+        <p:ajaxStatus onstart="on_start()" oncomplete="on_complete()"/>
+
+    </ui:composition>
+</html>

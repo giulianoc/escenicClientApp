@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<p:dialog header="RSI Chat" appendTo="@(body)" widgetVar="rsiChatDialog" modal="true"
+          showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+    <h:form id="chatForm">
+
+        <p:panelGrid style="width: 500; margin-top:20px">
+
+            <p:row>
+                <p:column>
+                    <p:outputLabel for="channelType" value="Chat type:  " style="font-weight: bold" />
+
+                    <p:selectOneMenu
+                        id="channelType"
+                        value="#{chatBacking.channelType}" >
+                        <f:selectItem itemLabel="Select a chat" itemValue="" noSelectionOption="true" />
+                        <f:selectItems value="#{chatBacking.channelTypeList}" style="width: 100%" />
+                        <p:ajax event="change" update="userChannel send" global="false" />
+                    </p:selectOneMenu>
+                </p:column>
+
+                <p:column>
+                    <p:outputLabel for="userChannel" value="User name:  " style="font-weight: bold" />
+
+                    <p:inputText id="userChannel"
+                        disabled="#{!(chatBacking.channelType == 'user')}"
+                        value="#{chatBacking.userChannel}" >
+                        <p:ajax
+                            event="change"
+                            update="send" global="false" />
+                    </p:inputText>
+                </p:column>
+
+                <p:column rowspan="3">
+                    <p:outputLabel for="allChatEditor" value="RSI Chat:  " style="font-weight: bold" />
+                    <p:editor id="allChatEditor"
+                        widgetVar="allChatEditor"
+                        controls=""
+                        disabled="true"
+                        value="#{chatBacking.allChat}" />
+                </p:column>
+
+            </p:row>
+
+            <p:row>
+                <p:column colspan="2">
+                    <p:outputLabel for="messageEditor" value="Message to send:  " style="font-weight: bold" />
+                    <p:editor id="messageEditor" value="#{chatBacking.message}" />
+                </p:column>
+
+            </p:row>
+
+            <p:row>
+
+                <p:column colspan="2">
+                    <!-- it is useless to check chatBacking.message because even when there is no text, chatBacking.message is <br/> -->
+                    <p:commandButton
+                        id="send"
+                        disabled="#{!((chatBacking.channelType == 'broadcast') or (chatBacking.channelType == 'user' and chatBacking.userChannel != '') )}"
+                        value="Send"
+                        update="messageEditor allChatEditor"
+                        actionListener="#{chatBacking.sendMessage}"
+                        style="width: 100%" />
+                </p:column>
+
+            </p:row>
+
+        </p:panelGrid>
+
+
+    </h:form>
+
+</p:dialog>
+
+</html>

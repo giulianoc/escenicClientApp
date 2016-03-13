@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<p:dialog header="Save Content" appendTo="@(body)" widgetVar="saveContentDialog" modal="true"
+          showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+    <h:form id="saveContentDialogForm">
+        <p:outputLabel value="Are you sure?" />
+        <br />
+        <br />
+
+        <p:commandButton value="Cancel" onclick="PF('saveContentDialog').hide()" />
+
+        <p:commandButton value="Save" action="#{articlesTabsBacking.saveArticle}"
+            onclick="PF('saveContentDialog').hide()"
+            update=":escenicTabViewForm:escenicArticlesTabView :resultsForm:results"/>
+    </h:form>
+
+</p:dialog>
+
+<p:dialog header="Delete Content" appendTo="@(body)" widgetVar="deleteContentDialog" modal="true"
+          showEffect="fade" hideEffect="fade" resizable="false" draggable="true">
+
+    <h:form id="deleteContentDialogForm">
+        <p:outputLabel value="Are you sure?" />
+        <br />
+        <br />
+
+        <p:commandButton value="Cancel" onclick="PF('deleteContentDialog').hide()" />
+
+        <p:commandButton value="Delete" action="#{articlesTabsBacking.deleteArticle}"
+            onclick="PF('deleteContentDialog').hide()"
+            update=":escenicTabViewForm:escenicArticlesTabView :resultsForm:results"/>
+    </h:form>
+
+</p:dialog>
+
+<h:form id="escenicTabViewForm" enctype="multipart/form-data">
+
+    <p:growl showDetail="true" escape="false" autoUpdate="true" life="5000" />
+
+    <p:socket channel="/locks" onMessage="locksChannelMessage" />
+
+    <h:panelGroup styleClass="hiddenUserName">
+        <p:outputLabel style="display: none" value="#{sessionScope.escenicService.userName}" />
+    </h:panelGroup>
+    <p:remoteCommand name="receivedMessage" actionListener="#{chatBacking.receivedMessage}" update=":chatForm:allChatEditor"/>
+    <p:socket channel="/user" onMessage="userChannelMessage" />
+
+
+    <p:tabView id="escenicArticlesTabView" dynamic="true" cache="false" scrollable="true"
+               activeIndex="#{articlesTabsBacking.activeTabIndex}"
+               value="#{articlesTabsBacking.tabs}" var="tab">
+
+        <p:ajax event="tabClose" listener="#{articlesTabsBacking.onTabClose}" />
+
+        <p:tab id="escenicArticlesTab" title="#{tab.tabHeaderTitle}" closable="true">
+
+            <p:toolbar id="articlesFormToolbar" styleClass="escenicBrowserToolbar">
+
+                <p:toolbarGroup align="left">
+
+                    <p:commandButton icon="ui-icon ui-icon-refresh" action="#{articlesTabsBacking.refreshArticle}"
+                        update=":escenicTabViewForm:escenicArticlesTabView" />
+
+                    <p:commandButton
+                        icon="ui-icon ui-icon-disk"
+                        onclick="PF('saveContentDialog').show()"/>
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:outputLabel value="#{tab.article.metadataFields['com.escenic.state'].stringValue}" style="font-weight: bold" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:selectOneMenu id="state" value="#{tab.article.selectedNewState}">
+                        <f:selectItem itemLabel="Change state" itemValue="" />
+                        <f:selectItems value="#{tab.article.stateTransitions}" />
+                        <p:ajax event="change" onstart="PF('saveContentDialog').show()" global="false" />
+                    </p:selectOneMenu>
+
+                </p:toolbarGroup>
+
+                <p:toolbarGroup align="right">
+
+                    <p:outputLabel value="#{tab.article.contentType}" style="font-weight: bold" />
+
+                    <span class="ui-separator">
+                        <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                    </span>
+
+                    <p:commandButton icon="ui-icon ui-icon-trash" onclick="PF('deleteContentDialog').show()"/>
+
+                </p:toolbarGroup>
+
+            </p:toolbar>
+
+            <p:panel
+                rendered="#{sessionScope.escenicService.isAdministrator()}"
+                style="border: none; margin: 0; padding: 0;">
+                <ui:include src="/protected/views/helpers/articleAdministrator.xhtml"/>
+            </p:panel>
+
+            <p:panel
+                rendered="#{!sessionScope.escenicService.isAdministrator()}"
+                style="border: none; margin: 0; padding: 0;">
+                <ui:include src="/protected/views/helpers/articleUser.xhtml"/>
+            </p:panel>
+
+        </p:tab>
+
+    </p:tabView>
+
+</h:form>
+
+</html>
