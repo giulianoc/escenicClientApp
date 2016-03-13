@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="rsiInternalAPP:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="rsiInternalAPP.war">
-      <element id="artifact" artifact-name="rsiInternalAPP:war exploded" />
-    </root>
-  </artifact>
-</component>
