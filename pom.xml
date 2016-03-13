@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<name>RSI Internal APP</name>
+	<name>Escenic Client App</name>
 	<groupId>com.client</groupId>
 	<artifactId>escenicClientApp</artifactId>
 	<version>1.0.0-SNAPSHOT</version>

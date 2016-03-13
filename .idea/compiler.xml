@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="escenicClientApp" />
         <module name="rsiInternalAPP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="escenicClientApp" target="1.7" />
       <module name="rsiInternalAPP" target="1.7" />
     </bytecodeTargetLevel>
   </component>

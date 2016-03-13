@@ -10,7 +10,7 @@
     <file path="/login.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451927293805" ignored="false" />
     <file path="/header.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446966819945" ignored="false" />
     <file path="/messages.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445885030737" ignored="false" />
-    <file path="/a.dummy" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457701688528" ignored="false" />
+    <file path="/a.dummy" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457867350808" ignored="false" />
     <file path="/rsiapp.css" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1448423692970" ignored="false" />
     <file path="/User.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445520729894" ignored="false" />
     <file path="/LoginManager.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1446369374000" ignored="false" />
@@ -47,7 +47,7 @@
     <file path="/LoginBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1451045210130" ignored="false" />
     <file path="/configuration.properties" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445783123490" ignored="false" />
     <file path="/navitem.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445790894481" ignored="false" />
-    <file path="/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457865083911" ignored="false" />
+    <file path="/pom.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457867366801" ignored="false" />
     <file path="/escenicBrowser.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1450242272489" ignored="false" />
     <file path="/north.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1445936427877" ignored="false" />
     <file path="$PROJECT_DIR$/../north/plugins/epg-from-vms/newepg/src/main/java/com/rsi/newepg/DescribedByInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1447066060573" ignored="false" />
@@ -417,27 +417,20 @@
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/MediaInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/HistoryLog.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/State.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ConfigureBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/webapp/resources/myCkEditor/MyCkEditor.xhtml" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Configuration/Configuration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/SearchResult/ArticleTableData.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/LockChanged.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ArticleSearchBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/SearchResult/LazySearchResultDataModel.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Configuration/FieldConfiguration.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/MediaEntryInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/LazySearchResultViewBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ArticlesTabsBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329501" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ThemeChoices.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/NewArticle.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/ContentTypeConverter.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/MessageInfoPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/LocksPushEndPoint.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/Article.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/common/ContentType.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/ChatBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/client/backing/LoginBacking.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/EscenicTab.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864352883" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/ArticleTabs/ImageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/client/backing/model/Chat/MessageInfo.java" changelist="0403ed4d-21cb-4cfb-9359-23f735c154b0" time="1457864329502" ignored="false" />
@@ -501,65 +494,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EscenicService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="16" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1451927302000" expanded="true" signature="1203:1236" placeholder="{...}" />
-                <marker date="1451927302000" expanded="true" signature="1431:1459" placeholder="{...}" />
-                <marker date="1451927302000" expanded="true" signature="1507:1522" placeholder="{...}" />
-                <marker date="1451927302000" expanded="true" signature="2339:2352" placeholder="{...}" />
-                <marker date="1451927302000" expanded="true" signature="2418:2435" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configure.xhtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="configure.xhtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/admin/configure.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="1111" selection-end="1126" vertical-scroll-proportion="0.0">
+            <state line="36" column="38" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.4040404">
               <folding>
                 <marker date="1451758394000" expanded="true" signature="5732:5749" placeholder="{...}" />
                 <marker date="1451758394000" expanded="true" signature="8700:8717" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleBrowserBacking.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/backing/ArticleBrowserBacking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="428" column="72" selection-start="14710" selection-end="14743" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -642,6 +584,118 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rsiInternalAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="escenicClientApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,6 +804,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -968,11 +1026,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1226" height="705" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3811966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -989,13 +1048,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.320339" sideWeight="0.61880344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.320339" sideWeight="0.61880344" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3811966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1074,7 +1132,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/escenicBrowser.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="105" selection-end="149" vertical-scroll-proportion="0.0" />
+        <state line="3" column="6" selection-start="105" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common/chat.xhtml">
@@ -1123,6 +1183,20 @@
         <state line="6" column="25" selection-start="0" selection-end="313" vertical-scroll-proportion="-0.115384616" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="28" selection-start="308" selection-end="308" vertical-scroll-proportion="0.30201343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="882" selection-end="882" vertical-scroll-proportion="0.66101694">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1132,45 +1206,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="16" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.0">
+        <state line="70" column="16" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.048387095">
           <folding>
-            <marker date="1451927302000" expanded="true" signature="1203:1236" placeholder="{...}" />
-            <marker date="1451927302000" expanded="true" signature="1431:1459" placeholder="{...}" />
-            <marker date="1451927302000" expanded="true" signature="1507:1522" placeholder="{...}" />
-            <marker date="1451927302000" expanded="true" signature="2339:2352" placeholder="{...}" />
-            <marker date="1451927302000" expanded="true" signature="2418:2435" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/admin/configure.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1111" selection-end="1126" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1451758394000" expanded="true" signature="5732:5749" placeholder="{...}" />
-            <marker date="1451758394000" expanded="true" signature="8700:8717" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1451927302000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/backing/ArticleBrowserBacking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="428" column="72" selection-start="14710" selection-end="14743" vertical-scroll-proportion="0.0">
+        <state line="428" column="72" selection-start="14710" selection-end="14743" vertical-scroll-proportion="0.046728972">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/EscenicService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/pages/admin/configure.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="36" column="38" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.4040404">
+          <folding>
+            <marker date="1451758394000" expanded="true" signature="5732:5749" placeholder="{...}" />
+            <marker date="1451758394000" expanded="true" signature="8700:8717" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
